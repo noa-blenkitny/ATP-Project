@@ -28,8 +28,20 @@ public class MazeDisplayer extends Canvas {
     private int playerRow = 0;
     private int playerCol = 0;
     // wall and player images:
-    StringProperty imageFileNameWall = new SimpleStringProperty();
-    StringProperty imageFileNamePlayer = new SimpleStringProperty();
+    private StringProperty imageFileNameWall = new SimpleStringProperty();
+    private StringProperty imageFileNamePlayer = new SimpleStringProperty();
+    private StringProperty imageFox = new SimpleStringProperty();
+    private StringProperty imageGazelle = new SimpleStringProperty();
+    private StringProperty imageMonkey = new SimpleStringProperty();
+    private StringProperty imageChild = new SimpleStringProperty();
+    private Image playerImage ;
+
+    public void setImageMan(String imageMan) {
+        this.imageMan.set(imageMan);
+    }
+
+    private StringProperty imageMan = new SimpleStringProperty();
+    private StringProperty imageWoman = new SimpleStringProperty();
 
 
     public int getPlayerRow() {
@@ -135,9 +147,6 @@ public class MazeDisplayer extends Canvas {
         double x = getPlayerCol() * cellWidth;
         double y = getPlayerRow() * cellHeight;
         graphicsContext.setFill(Color.GREEN);
-        Image playerImage = null;
-
-
         try {
 
             playerImage = new Image(new FileInputStream(getImageFileNamePlayer()));
@@ -155,10 +164,11 @@ public class MazeDisplayer extends Canvas {
         switch(player)
         {
             case "fox":
-                imageFileNamePlayer.set("./resources/images/foxR1.png");
+                imageFileNamePlayer.set(imageFox.get());
                 break;
             case "child":
-                imageFileNamePlayer.set("./resources/images/childR1.png");
+                imageFileNamePlayer.set(imageChild.get());
+               // playerImage = new Image(new FileInputStream())
                 break;
             case "monkey":
                 imageFileNamePlayer.set("./resources/images/monkey1.PNG");
@@ -174,6 +184,75 @@ public class MazeDisplayer extends Canvas {
                 break;
 
         }
+    }
+
+    public String getImageFox() {
+        return imageFox.get();
+    }
+
+    public StringProperty imageFoxProperty() {
+        return imageFox;
+    }
+
+    public void setImageFox(String imageFox) {
+        this.imageFox.set(imageFox);
+    }
+
+    public String getImageGazelle() {
+        return imageGazelle.get();
+    }
+
+    public StringProperty imageGazelleProperty() {
+        return imageGazelle;
+    }
+
+    public void setImageGazelle(String imageGazelle) {
+        this.imageGazelle.set(imageGazelle);
+    }
+
+    public String getImageMonkey() {
+        return imageMonkey.get();
+    }
+
+    public StringProperty imageMonkeyProperty() {
+        return imageMonkey;
+    }
+
+    public void setImageMonkey(String imageMonkey) {
+        this.imageMonkey.set(imageMonkey);
+    }
+
+    public String getImageChild() {
+        return imageChild.get();
+    }
+
+    public StringProperty imageChildProperty() {
+        return imageChild;
+    }
+
+    public void setImageChild(String imageChild) {
+        this.imageChild.set(imageChild);
+    }
+
+    public String getImageWoman() {
+        return imageWoman.get();
+    }
+
+    public StringProperty imageWomanProperty() {
+        return imageWoman;
+    }
+
+    public void setImageWoman(String imageWoman) {
+        this.imageWoman.set(imageWoman);
+    }
+
+
+    public String getImageMan() {
+        return imageMan.get();
+    }
+
+    public StringProperty imageManProperty() {
+        return imageMan;
     }
 
 }

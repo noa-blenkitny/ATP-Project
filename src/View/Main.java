@@ -1,3 +1,8 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package View;
 
 import Model.IModel;
@@ -10,19 +15,20 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    public Main() {
+    }
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("helpWindow.fxml"));
-        Parent root = fxmlLoader.load();
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("MyView.fxml"));
+        Parent root = (Parent)fxmlLoader.load();
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 1000, 650));
+        primaryStage.setScene(new Scene(root, 1000.0D, 650.0D));
         primaryStage.show();
-
-       // IModel model = new MyModel();
-       // MyViewModel myViewModel = new MyViewModel(model);
-       // mazeWindowController mazeWindowController = fxmlLoader.getController();
-       // mazeWindowController.setViewModel(myViewModel);
+        IModel model = new MyModel();
+        MyViewModel myViewModel = new MyViewModel(model);
+        MyViewController myViewController = (MyViewController)fxmlLoader.getController();
+        myViewController.setViewModel(myViewModel);
+        myViewController.setPrimaryStage(primaryStage);
     }
 
     public static void main(String[] args) {
