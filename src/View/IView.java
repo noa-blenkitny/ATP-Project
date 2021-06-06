@@ -7,5 +7,5 @@ public interface IView {
     void switchScene();
     void help();
     void about();
-    void Proporties();
+    void properties();
 }

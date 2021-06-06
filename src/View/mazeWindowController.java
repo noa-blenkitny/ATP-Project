@@ -18,7 +18,7 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.ResourceBundle;
 
-public class mazeWindowController implements Initializable, Observer {
+public class mazeWindowController extends AView implements Initializable, Observer {
     public MyViewModel myViewModel;
 
     public void setViewModel(MyViewModel myViewModel) {
