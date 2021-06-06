@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="helpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@helpWindowDesighn.css" />
+    </stylesheets>
+    <children>
+
+                  <Label layoutX="14.0" layoutY="251.0" text="At any stage you can click on the Solve button and get the path to the maze solution." />
+      <Label layoutX="14.0" layoutY="159.0" prefHeight="17.0" prefWidth="568.0" text="the maze. In the maze you can move right, left, down and up with the arrow keys or the num pad with" />
+      <Label layoutX="13.0" layoutY="67.0" prefHeight="79.0" prefWidth="580.0" text="Choose the character you want to play with, then choose the difficulty level - easy, medium, hard " />
+      <Label layoutX="14.0" layoutY="129.0" prefHeight="17.0" prefWidth="568.0" text="or choose a custom size where you can insert a number of rows and a number of columns that will be in " />
+      <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="535.0" text="A jungle adventure maze game." />
+      <Label layoutX="14.0" layoutY="223.0" prefHeight="17.0" prefWidth="535.0" text="regular movements. " />
+      <Label layoutX="14.0" layoutY="192.0" text="the numbers 2,4,6,8. You can move diagonally only if there is a way to reach the same cell using two " />
+   </children>
+</Pane>

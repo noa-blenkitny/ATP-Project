@@ -135,35 +135,8 @@ public class MazeDisplayer extends Canvas {
         double x = getPlayerCol() * cellWidth;
         double y = getPlayerRow() * cellHeight;
         graphicsContext.setFill(Color.GREEN);
-/*
-        //******************************************
-        ImageView imageView = new ImageView();
-        List<Image> images = new ArrayList<>();
-        try{
-        images.add(new Image(new FileInputStream("./resources/images/foxL1.png")));
-        images.add(new Image(new FileInputStream("./resources/images/foxL2.png")));
-        images.add(new Image(new FileInputStream("./resources/images/foxL3.png")));
-
-        Transition animation = new Transition() {
-            {
-                setCycleDuration(Duration.millis(1000)); // total time for animation
-                setCycleCount(100);
-                setDisabled(true);
-            }
-
-            @Override
-            protected void interpolate(double fraction) {
-                int index = (int) (fraction*(images.size()-1));
-                imageView.setImage(images.get(index));
-                graphicsContext.drawImage(imageView.getImage(), x, y, cellWidth, cellHeight);
-            }
-        };
-        animation.play();
-        }
-        catch(Exception e){e.printStackTrace();}
-        //******************************************
-*/
         Image playerImage = null;
+
 
         try {
 
