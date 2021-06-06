@@ -1,0 +1,78 @@
+
+#resumeButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#resumeLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#restartButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#restartLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#solveButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#solveLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+
+#quitButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#quitLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#pausePane
+{
+    -fx-background-image: url(../../../../resources/images/middleBackground1.jpeg) ;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}

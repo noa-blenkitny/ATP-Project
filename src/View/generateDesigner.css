@@ -1,0 +1,36 @@
+#rowLabel
+{
+    -fx-font-size: 35px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
+#colLabel
+{
+    -fx-font-size: 35px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
+#generatePane
+{
+    -fx-background-image: url(../../../../resources/images/middleBackground1.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}
+#generateButton
+{
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+    -fx-background-color: transperent;
+}
+#generateLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}

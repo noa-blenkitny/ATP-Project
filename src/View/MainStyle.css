@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #2ea7bd;
+}
+
+#startButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#startPane
+{
+    -fx-background-image: url(../../../../resources/images/startBackground.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+#startLabel
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}

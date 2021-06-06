@@ -1,0 +1,78 @@
+
+#easyButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#easyLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#mediumButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#mediumLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#hardButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#hardLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+
+#castomButtom
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#castomLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#hardnessPane
+{
+    -fx-background-image: url(../../../../resources/images/middleBackground1.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}

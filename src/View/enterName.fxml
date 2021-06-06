@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="namePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@enterNameDesign.css" />
+    </stylesheets>
+  <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="282.0000203450521" />
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="155.99997965494788" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="23.666646321614564" />
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="118.66666666666669" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="74.0000025431315" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="146.00002034505206" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="59.33331298828125" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="9.666666666666686" prefHeight="52.99998982747394" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="57.33331298828125" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="9.0" prefHeight="9.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="nameOKButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="70.0" prefWidth="148.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <graphic>
+            <Label fx:id="OKlable" prefHeight="52.0" prefWidth="47.0" text="OK" />
+         </graphic>
+         <GridPane.margin>
+            <Insets bottom="30.0" left="20.0" right="30.0" top="40.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField prefHeight="36.0" prefWidth="207.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
