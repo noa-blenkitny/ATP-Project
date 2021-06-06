@@ -100,7 +100,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
         String change = (String) arg;
         switch (change){
             case "maze generated" -> mazeGenerated();
-            case "player moved" -> playerMoved();
+            case "updated player position" -> playerMoved();
            // case "maze solved" -> mazeSolved();
             default -> System.out.println("Not implemented change: " + change);
         }

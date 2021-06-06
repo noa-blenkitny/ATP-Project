@@ -1,0 +1,60 @@
+#enterNamePane
+{
+    -fx-background-image: url(../../../../resources/images/choosePlayerBackround.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+
+#monkeyButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/staticMonkey.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#gazelleButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/GazelleR2.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+
+#foxButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/staticFox.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+
+#childButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/childR2.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+#womenButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/womenR2.PNG) center center fixed;
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+#manButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/manR1.PNG) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}

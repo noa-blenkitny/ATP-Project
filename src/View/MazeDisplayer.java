@@ -1,16 +1,25 @@
 package View;
 
 import Model.Solution;
+import javafx.animation.Timeline;
+import javafx.animation.Transition;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
+import javafx.util.Duration;
+
+
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MazeDisplayer extends Canvas {
     private int[][] maze;
@@ -126,9 +135,38 @@ public class MazeDisplayer extends Canvas {
         double x = getPlayerCol() * cellWidth;
         double y = getPlayerRow() * cellHeight;
         graphicsContext.setFill(Color.GREEN);
+/*
+        //******************************************
+        ImageView imageView = new ImageView();
+        List<Image> images = new ArrayList<>();
+        try{
+        images.add(new Image(new FileInputStream("./resources/images/foxL1.png")));
+        images.add(new Image(new FileInputStream("./resources/images/foxL2.png")));
+        images.add(new Image(new FileInputStream("./resources/images/foxL3.png")));
 
+        Transition animation = new Transition() {
+            {
+                setCycleDuration(Duration.millis(1000)); // total time for animation
+                setCycleCount(100);
+                setDisabled(true);
+            }
+
+            @Override
+            protected void interpolate(double fraction) {
+                int index = (int) (fraction*(images.size()-1));
+                imageView.setImage(images.get(index));
+                graphicsContext.drawImage(imageView.getImage(), x, y, cellWidth, cellHeight);
+            }
+        };
+        animation.play();
+        }
+        catch(Exception e){e.printStackTrace();}
+        //******************************************
+*/
         Image playerImage = null;
+
         try {
+
             playerImage = new Image(new FileInputStream(getImageFileNamePlayer()));
         } catch (FileNotFoundException e) {
             System.out.println("There is no player image file");
