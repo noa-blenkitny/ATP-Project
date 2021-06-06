@@ -39,7 +39,7 @@ Button:hover {
 }
 #soundBarIcon
 {
-    -fx-image: url(../../../../resources/images/volumBarIcon.png);
+    -fx-image: url(../../../../resources/images/whiteSoundIconTransperant.png);
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-background-size: stretch stretch;
