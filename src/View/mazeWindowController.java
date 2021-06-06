@@ -21,6 +21,7 @@ import java.util.ResourceBundle;
 public class mazeWindowController extends AView implements Initializable, Observer {
     public MyViewModel myViewModel;
 
+
     public void setViewModel(MyViewModel myViewModel) {
         this.myViewModel = myViewModel;
         this.myViewModel.addObserver(this);
@@ -116,5 +117,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
     private void mazeGenerated() {
         mazeDisplayer.drawMaze(myViewModel.getMaze());
+    }
+    public void choosePlayer(String player)
+    {
+        mazeDisplayer.changePlayer(player);
     }
 }

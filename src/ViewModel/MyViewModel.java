@@ -79,4 +79,5 @@ public class MyViewModel extends Observable implements Observer
     {
         model.stopServers();
     }
+
 }

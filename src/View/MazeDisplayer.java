@@ -176,4 +176,31 @@ public class MazeDisplayer extends Canvas {
         else
             graphicsContext.drawImage(playerImage, x, y, cellWidth, cellHeight);
     }
+
+    public void changePlayer(String player)
+    {
+        switch(player)
+        {
+            case "fox":
+                imageFileNamePlayer.set("./resources/images/foxR1.png");
+                break;
+            case "child":
+                imageFileNamePlayer.set("./resources/images/childR1.png");
+                break;
+            case "monkey":
+                imageFileNamePlayer.set("./resources/images/monkey1.PNG");
+                break;
+            case "gazelle":
+                imageFileNamePlayer.set("./resources/images/gazelleR1.png");
+                break;
+            case "man":
+                imageFileNamePlayer.set("./resources/images/manR1.PNG");
+                break;
+            case "women":
+                imageFileNamePlayer.set("./resources/images/womenR1.PNG");
+                break;
+
+        }
+    }
+
 }

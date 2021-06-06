@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MazeWindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MyView.fxml"));
         Parent root = fxmlLoader.load();
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 1000, 650));
@@ -21,9 +21,10 @@ public class Main extends Application {
 
         IModel model = new MyModel();
         MyViewModel myViewModel = new MyViewModel(model);
-        myViewModel.startServers();
-        mazeWindowController mazeWindowController = fxmlLoader.getController();
-        mazeWindowController.setViewModel(myViewModel);
+       // myViewModel.startServers();
+        MyViewController myViewController = fxmlLoader.getController();
+        myViewController.setViewModel(myViewModel);
+        myViewController.setPrimaryStage(primaryStage);
     }
 
     public static void main(String[] args) {

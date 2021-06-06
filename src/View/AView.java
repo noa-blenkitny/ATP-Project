@@ -1,13 +1,19 @@
 package View;
 
 import ViewModel.MyViewModel;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Observer;
 
 public abstract class AView implements IView, Observer {
-    private MyViewModel myViewModel;
+    private static Stage stage;
+    protected MyViewModel myViewModel;
     @Override
     public void save()
     {
@@ -43,10 +49,35 @@ public abstract class AView implements IView, Observer {
 
     }
 
-    @Override
-    public void switchScene()
-    {
+    public static Stage getStage() {
+        return stage;
+    }
 
+    public void setPrimaryStage(Stage primaryStage)
+    {
+        AView.stage = primaryStage;
+    }
+
+    @Override
+    public void switchScene(String fxmlName, Stage primaryStage) {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
+        try {
+            Parent root = fxmlLoader.load();
+            AView newView = fxmlLoader.getController();
+            newView.setViewModel(this.myViewModel);
+            Scene newScene = new Scene(root,1000,650);
+
+            primaryStage.setScene(newScene);
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setViewModel(MyViewModel myViewModel)
+    {
+        this.myViewModel= myViewModel;
+        this.myViewModel.addObserver(this);
     }
 
     @Override
