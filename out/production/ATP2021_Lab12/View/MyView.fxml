@@ -44,7 +44,11 @@
                    </items>
                </Menu>
                <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit" />
-               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help" />
+               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                   <items>
+                       <MenuItem fx:id="helpItem" mnemonicParsing="false" text="Instructions" onAction="#help" />
+                   </items>
+               </Menu>
                <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About" />
            </menus>
          <GridPane.margin>

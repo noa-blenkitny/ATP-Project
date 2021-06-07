@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -83,7 +84,16 @@ public abstract class AView implements IView, Observer {
     @Override
     public void help()
     {
-
+        try{
+            Stage newStage = new Stage();
+            newStage.setTitle("Help");
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            Parent root = fxmlLoader.load(getClass().getResource("helpWindow.fxml"));
+            Scene scene = new Scene(root, 1000, 500);
+            newStage.setScene(scene);
+            newStage.initModality(Modality.APPLICATION_MODAL);
+            newStage.show();
+        }catch (Exception e){ }
     }
 
     @Override
