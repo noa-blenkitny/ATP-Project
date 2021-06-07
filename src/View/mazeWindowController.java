@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.ScrollEvent;
+import javafx.scene.transform.Scale;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -121,7 +123,21 @@ public class mazeWindowController extends AView implements Initializable, Observ
     }
 
 
-
+    public void setOnScroll(ScrollEvent scroll) {
+        if (scroll.isControlDown()) {
+            double zoom_fac = 1.05;
+            if (scroll.getDeltaY() < 0) {
+                zoom_fac = 2.0 - zoom_fac;
+            }
+            Scale newScale = new Scale();
+            newScale.setPivotX(scroll.getX());
+            newScale.setPivotY(scroll.getY());
+            newScale.setX(mazeDisplayer.getScaleX() * zoom_fac);
+            newScale.setY(mazeDisplayer.getScaleY() * zoom_fac);
+            mazeDisplayer.getTransforms().add(newScale);
+            scroll.consume();
+        }
+    }
     protected void mazeGenerated() {
         mazeDisplayer.setSolution(null);
         mazeDisplayer.drawMaze(myViewModel.getMaze(),   myViewModel.getGoalPosition());

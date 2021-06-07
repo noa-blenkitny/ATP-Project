@@ -96,7 +96,7 @@
         </VBox>
     </top>
     <center>
-        <Pane fx:id="mazePane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="298.0" BorderPane.alignment="CENTER_RIGHT">
+        <Pane fx:id="mazePane" onScroll="#setOnScroll" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="298.0" BorderPane.alignment="CENTER_RIGHT">
             <children>
                 <MazeDisplayer fx:id="mazeDisplayer" height="${mazePane.height}" imageGoalPosition="resources/images/solImage.PNG" imageSolutionPath="resources/images/solutionPath.png" imageFileNamePlayer="resources/images/foxR1.png" imageFileNameWall="./resources/images/bush2.png" onKeyPressed="#keyPressed"  imageFox="./resources/images/foxR1.png" imageGazelle="./resources/images/gazelleR1.png" imageMonkey="./resources/images/foxR1.png" imageChild="./resources/images/childR1.png" imageMan="./resources/images/manR1.PNG" imageWoman="./resources/images/womemR1.PNG"  width="${mazePane.width}" />
             </children>
