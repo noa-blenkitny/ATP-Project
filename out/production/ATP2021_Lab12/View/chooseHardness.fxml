@@ -52,17 +52,17 @@
                <Insets bottom="120.0" />
            </GridPane.margin>
        </MenuBar>
-      <Button fx:id="easyButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Button fx:id="easyButton" maxHeight="1.7976931348623157E308" onAction="#easyMaze" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <graphic>
             <Label fx:id="easyLable" text="Easy" />
          </graphic>
       </Button>
-      <Button fx:id="mediumButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Button fx:id="mediumButton" maxHeight="1.7976931348623157E308" onAction="#mediumMaze" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <graphic>
             <Label fx:id="mediumLable" text="Medium" />
          </graphic>
       </Button>
-      <Button fx:id="hardButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Button fx:id="hardButton" maxHeight="1.7976931348623157E308" onAction="#hardMaze" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <graphic>
             <Label fx:id="hardLable" text="Hard" />
          </graphic>

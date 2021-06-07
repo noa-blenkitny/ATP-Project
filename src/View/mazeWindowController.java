@@ -65,6 +65,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         myViewModel.generateMaze(rows, cols);
     }
 
+    public void MazeByHardness(int rows, int cols) {
+        myViewModel.generateMaze(rows, cols);
+    }
     public void solveMaze(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setContentText("Solving maze...");
@@ -115,7 +118,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
         setPlayerPosition(myViewModel.getPlayerRow(), myViewModel.getPlayerCol());
     }
 
-    private void mazeGenerated() {
+    protected void mazeGenerated() {
         mazeDisplayer.drawMaze(myViewModel.getMaze());
     }
     public void choosePlayer(String player)
