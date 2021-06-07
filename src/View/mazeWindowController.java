@@ -1,5 +1,6 @@
 package View;
 
+import Model.MyModel;
 import ViewModel.MyViewModel;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -69,9 +70,6 @@ public class mazeWindowController extends AView implements Initializable, Observ
         //myViewModel.generateMaze(rows, cols);
    // }
     public void solveMaze(ActionEvent actionEvent) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Solving maze...");
-        alert.show();
         myViewModel.solveMaze();
     }
 
@@ -105,22 +103,28 @@ public class mazeWindowController extends AView implements Initializable, Observ
         switch (change){
             case "maze generated" -> mazeGenerated();
             case "updated player position" -> playerMoved();
-           // case "maze solved" -> mazeSolved();
+            case "maze solved" -> mazeSolved();
             case "invalid params" -> invalidParamAlert("Invalid parameter entered.\nPlease enter an integer between 2 to 1000.");
+            //case "reached goal position" ->
             default -> System.out.println("Not implemented change: " + change);
         }
     }
 
-    //private void mazeSolved() {
-       // mazeDisplayer.setSolution(myViewModel.getSolution());
-   // }
+    private void mazeSolved()
+    {
+        mazeDisplayer.setSolution(myViewModel.getSolution());
+    }
+
 
     private void playerMoved() {
         setPlayerPosition(myViewModel.getPlayerRow(), myViewModel.getPlayerCol());
     }
 
+
+
     protected void mazeGenerated() {
-        mazeDisplayer.drawMaze(myViewModel.getMaze());
+        mazeDisplayer.setSolution(null);
+        mazeDisplayer.drawMaze(myViewModel.getMaze(),   myViewModel.getGoalPosition());
         mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerRow());
     }
     public void choosePlayer(String player)
@@ -130,3 +134,4 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
 
 }
+

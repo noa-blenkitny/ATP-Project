@@ -2,6 +2,7 @@ package ViewModel;
 
 import Model.Direction;
 import Model.IModel;
+import algorithms.mazeGenerators.Position;
 import algorithms.search.Solution;
 import com.sun.glass.ui.View;
 import javafx.scene.control.Alert;
@@ -115,5 +116,10 @@ public class MyViewModel extends Observable implements Observer
             return false;
         }
         return true;
+    }
+    public Position getGoalPosition()
+    {
+        Position goalPos = new Position( model.getGoalRowPosition(), model.getGoalColPosition());
+        return goalPos;
     }
 }

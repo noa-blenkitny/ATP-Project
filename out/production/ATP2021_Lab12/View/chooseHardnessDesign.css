@@ -51,11 +51,10 @@
 
 }
 
-#castomButtom
+#costumButtom
 {
     -fx-background-color: transparent;
     -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
-
     -fx-background-size: stretch stretch ;
     -fx-background-repeat: no-repeat;
 

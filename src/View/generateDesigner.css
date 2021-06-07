@@ -25,7 +25,7 @@
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-background-size: stretch stretch;
-    -fx-background-color: transperent;
+    -fx-background-color: transparent;
 }
 #generateLabel
 {

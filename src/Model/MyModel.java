@@ -115,6 +115,11 @@ public class MyModel extends Observable implements IModel
         }
     }
     @Override
+    public Solution getSolution()
+    {
+        return solution;
+    }
+    @Override
     public void solveMaze()
     {
         serverSolveMaze();
@@ -248,10 +253,7 @@ public class MyModel extends Observable implements IModel
 
 
 
-    @Override
-    public Solution getSolution() {
-        return solution;
-    }
+
 
 
 
