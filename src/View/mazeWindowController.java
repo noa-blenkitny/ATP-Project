@@ -56,18 +56,18 @@ public class mazeWindowController extends AView implements Initializable, Observ
     public void initialize(URL url, ResourceBundle resourceBundle) {
         playerRow.textProperty().bind(updatePlayerRow);
         playerCol.textProperty().bind(updatePlayerCol);
+        mazeDisplayer.changePlayer(choosePlayerController.getChosenPlayer());
     }
 
     public void generateMaze(ActionEvent actionEvent) {
-        int rows = Integer.valueOf(textField_mazeRows.getText());
-        int cols = Integer.valueOf(textField_mazeColumns.getText());
-
+        String rows = textField_mazeRows.getText();
+        String cols = textField_mazeColumns.getText();
         myViewModel.generateMaze(rows, cols);
     }
 
-    public void MazeByHardness(int rows, int cols) {
-        myViewModel.generateMaze(rows, cols);
-    }
+    //public void MazeByHardness(int rows, int cols) {
+        //myViewModel.generateMaze(rows, cols);
+   // }
     public void solveMaze(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setContentText("Solving maze...");
@@ -106,6 +106,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
             case "maze generated" -> mazeGenerated();
             case "updated player position" -> playerMoved();
            // case "maze solved" -> mazeSolved();
+            case "invalid params" -> invalidParamAlert("Invalid parameter entered.\nPlease enter an integer between 2 to 1000.");
             default -> System.out.println("Not implemented change: " + change);
         }
     }
@@ -120,9 +121,12 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
     protected void mazeGenerated() {
         mazeDisplayer.drawMaze(myViewModel.getMaze());
+        mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerRow());
     }
     public void choosePlayer(String player)
     {
         mazeDisplayer.changePlayer(player);
     }
+
+
 }

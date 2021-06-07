@@ -67,7 +67,7 @@
             <Label fx:id="hardLable" text="Hard" />
          </graphic>
       </Button>
-      <Button fx:id="castomButtom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Button fx:id="costumButtom" maxHeight="1.7976931348623157E308" onAction="#costumMaze" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <graphic>
             <Label fx:id="castomLable" text="Custom" />
          </graphic>

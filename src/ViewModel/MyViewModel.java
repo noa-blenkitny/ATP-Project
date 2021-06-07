@@ -3,6 +3,8 @@ package ViewModel;
 import Model.Direction;
 import Model.IModel;
 import algorithms.search.Solution;
+import com.sun.glass.ui.View;
+import javafx.scene.control.Alert;
 import javafx.scene.input.KeyEvent;
 
 import java.util.Observable;
@@ -37,8 +39,18 @@ public class MyViewModel extends Observable implements Observer
     public Solution getSolution(){
         return model.getSolution();
     }
-    public void generateMaze(int rows, int cols){
-        model.generateMaze(rows, cols);
+    public void generateMaze(String rows, String cols)
+    {
+        if(checkMazeGenarationParams(rows,cols) == true)
+        {
+            model.generateMaze(Integer.parseInt(rows), Integer.parseInt(cols));
+        }
+        else
+        {
+            setChanged();
+            notifyObservers("invalid params");
+        }
+
     }
     public void solveMaze(){
         model.solveMaze();
@@ -79,5 +91,29 @@ public class MyViewModel extends Observable implements Observer
     {
         model.stopServers();
     }
+    public boolean checkMazeGenarationParams(String rows, String cols)
+    {
+        if(numberOrNot(rows) == false ||numberOrNot(cols) == false )
+        {
+            return false;
+        }
+        if(Integer.parseInt(rows) <=1 || Integer.parseInt(cols) <= 1 || Integer.parseInt(rows) >1000 || Integer.parseInt(cols) >1000)
+        {
+            return false;
+        }
+        return true;
+    }
 
+    private boolean numberOrNot(String input)
+    {
+        try
+        {
+            Integer.parseInt(input);
+        }
+        catch(NumberFormatException ex)
+        {
+            return false;
+        }
+        return true;
+    }
 }

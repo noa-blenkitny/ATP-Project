@@ -4,6 +4,7 @@ import ViewModel.MyViewModel;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -106,5 +107,10 @@ public abstract class AView implements IView, Observer {
     public void properties()
     {
 
+    }
+    public void invalidParamAlert(String Message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText(Message);
+        alert.show();
     }
 }

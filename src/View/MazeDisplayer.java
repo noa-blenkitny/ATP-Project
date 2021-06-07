@@ -92,7 +92,7 @@ public class MazeDisplayer extends Canvas {
         draw();
     }
 
-    private void draw() {
+    public void draw() {
         if(maze != null){
             double canvasHeight = getHeight();
             double canvasWidth = getWidth();
@@ -113,12 +113,12 @@ public class MazeDisplayer extends Canvas {
         }
     }
 
-    private void drawSolution(GraphicsContext graphicsContext, double cellHeight, double cellWidth) {
+    public void drawSolution(GraphicsContext graphicsContext, double cellHeight, double cellWidth) {
         // need to be implemented
         System.out.println("drawing solution...");
     }
 
-    private void drawMazeWalls(GraphicsContext graphicsContext, double cellHeight, double cellWidth, int rows, int cols) {
+    public void drawMazeWalls(GraphicsContext graphicsContext, double cellHeight, double cellWidth, int rows, int cols) {
         graphicsContext.setFill(Color.RED);
 
         Image wallImage = null;

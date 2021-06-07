@@ -8,6 +8,8 @@ import java.util.Observable;
 
 public class choosePlayerController extends AView{
 
+
+    public static String chosenPlayer;
     @Override
     public void update(Observable o, Object arg) {
 
@@ -19,39 +21,49 @@ public class choosePlayerController extends AView{
             Parent root = fxmlLoader.load();
             mazeWindowController newView = fxmlLoader.getController();
             newView.choosePlayer(player);
+            chosenPlayer = player;
         }
         catch (Exception e)
         {}
     }
 
+    public static String getChosenPlayer() {
+        return chosenPlayer;
+    }
 
     public void women(ActionEvent actionEvent) {
-       switchScene("chooseHardness.fxml",getStage());
-       changePlayer("women");
+        chosenPlayer = "women";
+        switchScene("chooseHardness.fxml",getStage());
+      // changePlayer("women");
     }
 
     public void monkey(ActionEvent actionEvent) {
+        chosenPlayer = "monkey";
         switchScene("chooseHardness.fxml",getStage());
-        changePlayer("monkey");
+        //changePlayer("monkey");
     }
 
     public void fox(ActionEvent actionEvent) {
+        chosenPlayer = "fox";
         switchScene("chooseHardness.fxml",getStage());
-        changePlayer("fox");
+        //changePlayer("fox");
     }
 
     public void gazelle(ActionEvent actionEvent) {
+        chosenPlayer = "gazelle";
         switchScene("chooseHardness.fxml",getStage());
-        changePlayer("gazelle");
+        //changePlayer("gazelle");
     }
 
     public void child(ActionEvent actionEvent) {
+        chosenPlayer = "child";
         switchScene("chooseHardness.fxml",getStage());
-        changePlayer("child");
+        //changePlayer("child");
     }
 
     public void man(ActionEvent actionEvent) {
+        chosenPlayer = "man";
         switchScene("chooseHardness.fxml",getStage());
-        changePlayer("man");
+       // changePlayer("man");
     }
 }
