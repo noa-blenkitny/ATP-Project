@@ -1,0 +1,15 @@
+#helpPane
+{
+    -fx-background-image: url(../../../../resources/images/abouPic.jpg) ;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+.label
+{
+    -fx-font-size: 34px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
