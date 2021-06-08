@@ -6,6 +6,7 @@ import algorithms.mazeGenerators.Position;
 import algorithms.search.Solution;
 import com.sun.glass.ui.View;
 import javafx.scene.control.Alert;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 import java.util.Observable;
@@ -56,9 +57,9 @@ public class MyViewModel extends Observable implements Observer
     public void solveMaze(){
         model.solveMaze();
     }
-    public void movePlayer(KeyEvent keyEvent){
+    public void movePlayer(KeyCode keyCode){
         Direction direction;
-        switch (keyEvent.getCode()){
+        switch (keyCode){
             case UP, NUMPAD8 -> direction = Direction.UP;
             case DOWN, NUMPAD2 -> direction = Direction.DOWN;
             case LEFT, NUMPAD4 -> direction = Direction.LEFT;

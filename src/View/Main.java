@@ -10,8 +10,11 @@ import Model.MyModel;
 import ViewModel.MyViewModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -30,6 +33,8 @@ public class Main extends Application {
         myViewController.setViewModel(myViewModel);
         myViewController.setPrimaryStage(primaryStage);
     }
+
+
 
     public static void main(String[] args) {
         launch(args);
