@@ -1,0 +1,111 @@
+
+#easyButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#easyLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#mediumButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#mediumLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#hardButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#hardLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+
+#costumButtom
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#castomLable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#hardnessPane
+{
+    -fx-background-image: url(../../../../resources/images/middleBackground1.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+#menuBar
+{
+    -fx-background-color: transparent;
+
+}
+.menu-bar .label
+{
+    -fx-font-size: 15px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+}
+.menu-bar .menu:hover,
+.menu-bar .menu:showing{
+    -fx-background-color: transparent;
+}
+.context-menu{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, black, 10.0, 0.5, 0.0, 0.0);
+}
+.context-menu .label
+{
+    -fx-font-size: 15px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: black;
+}
+.context-menu:hover
+{
+    -fx-background-color: #cff8a9
+}
+.menu-item:hover,
+.menu-item .label:hover
+{
+    -fx-background-color: transparent;
+}
