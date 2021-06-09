@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="aboutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@aboutDisign.css" />
+    </stylesheets>
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.0" minWidth="0.0" prefWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="895.0" minWidth="10.0" prefWidth="895.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="279.0" minHeight="0.0" prefHeight="250.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="236.0" minHeight="7.0" prefHeight="51.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="391.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="534.0" minHeight="10.0" prefHeight="241.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="A Jungle Adventure Maze Game " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Maze Generation is based on Prim's algorithm" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Solving Algorithms are BFS, DFS, BEST" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label text="Made by Keren Diane and Noa Blenkitny" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
