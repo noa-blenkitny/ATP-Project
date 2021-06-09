@@ -27,7 +27,7 @@ public class chooseHardnessController extends AView{
     {
         switchScene("MazeWindow.fxml", getStage());
         myViewModel.startServers();
-        myViewModel.generateMaze(getRandomNumber(100,200), getRandomNumber(100,200));
+        myViewModel.generateMaze(getRandomNumber(50,100), getRandomNumber(50,100));
         //genareteMazeByHardness(getRandomNumber(100,500), getRandomNumber(100,500));
 
     }
@@ -36,7 +36,7 @@ public class chooseHardnessController extends AView{
     {
         switchScene("MazeWindow.fxml", getStage());
         myViewModel.startServers();
-        myViewModel.generateMaze(getRandomNumber(30,100), getRandomNumber(30,100));
+        myViewModel.generateMaze(getRandomNumber(30,50), getRandomNumber(30,50));
         //switchScene("MazeWindow.fxml", getStage());
         //genareteMazeByHardness(getRandomNumber(20,100), getRandomNumber(20,100));
 

@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added about scene, goal scene">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="updated helpWidow, AView, mazeWindowController">
+      <change afterPath="$PROJECT_DIR$/resources/ATPProjectJAR.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/properties.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/propertiesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/propertiesDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/leavesBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/leavesBackground.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/MyModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeDisplayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/helpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/helpWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/aboutDisign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/aboutDisign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/aboutWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/aboutWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/chooseHardness.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/chooseHardness.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/chooseHardnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/chooseHardnessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/choosePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/choosePlayer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/generateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/generateDesigner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generateDesigner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/helpWindowDesighn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/helpWindowDesighn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/mazeWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/mazeWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/mazeWindowDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/mazeWindowDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/richedGoalDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/reachedGoalDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/richedGoalPosition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/reachedGoalPosition.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,24 +56,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ATP-Project-PartC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/ATPProjectJAR.jar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.096153855" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources\images" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="View.Main" />
-      <module name="ATP2021_Lab12" />
+      <module name="ATP-Project" />
       <option name="VM_PARAMETERS" value="--module-path C:\Users\Dell\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
@@ -77,11 +90,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,6 +118,9 @@
       <workItem from="1623236225099" duration="4035000" />
       <workItem from="1623240373708" duration="100000" />
       <workItem from="1623240808578" duration="43000" />
+      <workItem from="1623240906019" duration="670000" />
+      <workItem from="1623241594851" duration="386000" />
+      <workItem from="1623241997748" duration="17951000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>
@@ -170,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623082447068</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated helpWidow, AView, mazeWindowController">
+      <created>1623240963037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623240963037</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated helpWidow, AView, mazeWindowController">
+      <created>1623241213477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623241213477</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +228,7 @@
     <MESSAGE value="add animated character in MazeDisplayer" />
     <MESSAGE value="updated switching between scenes" />
     <MESSAGE value="added about scene, goal scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="added about scene, goal scene" />
+    <MESSAGE value="updated helpWidow, AView, mazeWindowController" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated helpWidow, AView, mazeWindowController" />
   </component>
 </project>

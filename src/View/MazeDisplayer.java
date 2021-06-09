@@ -120,10 +120,11 @@ public class MazeDisplayer extends Canvas {
             graphicsContext.clearRect(0, 0, canvasWidth, canvasHeight);
 
             drawMazeWalls(graphicsContext, cellHeight, cellWidth, rows, cols);
+            drawGoal(graphicsContext, cellHeight, cellWidth);
             if(solution != null)
                 drawSolution(graphicsContext, cellHeight, cellWidth);
             drawPlayer(graphicsContext, cellHeight, cellWidth);
-            drawGoal(graphicsContext, cellHeight, cellWidth);
+
         }
     }
 

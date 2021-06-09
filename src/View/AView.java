@@ -14,10 +14,13 @@ import java.io.IOException;
 import java.util.Observer;
 
 public abstract class AView implements IView, Observer {
+
     private static Stage stage;
     protected MyViewModel myViewModel;
 
-
+    public static void setStage(Stage stage) {
+        AView.stage = stage;
+    }
 
     public static Stage getStage() {
         return stage;
@@ -36,7 +39,6 @@ public abstract class AView implements IView, Observer {
             AView newView = fxmlLoader.getController();
             newView.setViewModel(this.myViewModel);
             Scene newScene = new Scene(root,1000,650);
-
             primaryStage.setScene(newScene);
             primaryStage.show();
         } catch (IOException e) {
@@ -58,7 +60,7 @@ public abstract class AView implements IView, Observer {
             newStage.setTitle("Help");
             FXMLLoader fxmlLoader = new FXMLLoader();
             Parent root = fxmlLoader.load(getClass().getResource("helpWindow.fxml"));
-            Scene scene = new Scene(root, 1000, 500);
+            Scene scene = new Scene(root, 800, 500);
             newStage.setScene(scene);
             newStage.initModality(Modality.APPLICATION_MODAL);
             newStage.show();
@@ -68,13 +70,39 @@ public abstract class AView implements IView, Observer {
     @Override
     public void about()
     {
-
+        try{
+            Stage newStage = new Stage();
+            newStage.setTitle("About");
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            Parent root = fxmlLoader.load(getClass().getResource("aboutWindow.fxml"));
+            Scene scene = new Scene(root, 800, 500);
+            newStage.setScene(scene);
+            newStage.initModality(Modality.APPLICATION_MODAL);
+            newStage.show();
+        }catch (Exception e){ }
     }
 
     @Override
     public void properties()
     {
-
+        try
+        {
+            Stage newStage = new Stage();
+            newStage.setTitle("Properties");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("properties.fxml"));
+            Parent root = fxmlLoader.load();
+            AView newView = fxmlLoader.getController();
+            newView.setViewModel(this.myViewModel);
+            setStage(newStage);
+            Scene scene = new Scene(root, 800, 500);
+            newStage.setScene(scene);
+            newStage.initModality(Modality.APPLICATION_MODAL);
+            newStage.show();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
     public void invalidParamAlert(String Message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

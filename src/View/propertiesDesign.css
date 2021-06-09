@@ -1,0 +1,28 @@
+#propPane
+{
+    -fx-background-image: url(../../../../resources/images/leavesBackground.jpg) ;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+.label
+{
+    -fx-font-size: 30px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: #ffffff;
+
+}
+#updateButton {
+    -fx-background-color: transparent;
+    -fx-background-image: url(../../../../resources/images/woodenSignTransparent.png) center center fixed;
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+#updateLabel
+{
+    -fx-font-size: 30px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: #ffffff;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}

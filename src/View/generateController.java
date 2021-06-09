@@ -1,5 +1,6 @@
 package View;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -11,7 +12,7 @@ public class generateController extends AView {
     public TextField rowText;
     public TextField colText;
 
-    public void customSizeMazeGenerator() {
+    public void customSizeMazeGenerator(ActionEvent actionEvent) {
         String rows = rowText.getText();
         String cols = colText.getText();
         if(myViewModel.checkMazeGenarationParams(rows, cols) == true)
@@ -24,6 +25,7 @@ public class generateController extends AView {
         {
             invalidParamAlert("Invalid parameter entered.\nPlease enter an integer between 2 to 1000.");
         }
+
     }
 
 
@@ -31,4 +33,6 @@ public class generateController extends AView {
     public void update(Observable o, Object arg) {
 
     }
+
+
 }

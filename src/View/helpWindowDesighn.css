@@ -1,6 +1,6 @@
 #helpPane
 {
-    -fx-background-image: url(../../../../resources/images/ombreBackground.jpg) ;
+    -fx-background-image: url(../../../../resources/images/leavesBackground.jpg) ;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-background-size: stretch stretch;
@@ -11,5 +11,5 @@
     -fx-font-size: 25px strech  ;
     -fx-font-family: "MV Boli";
     -fx-text-fill: #ffffff;
-    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
 }

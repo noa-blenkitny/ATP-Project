@@ -8,11 +8,11 @@
 
 <GridPane fx:id="richedGoalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@richedGoalDesign.css" />
+        <URL value="@reachedGoalDesign.css" />
     </stylesheets>
   <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.3333333333333" minWidth="10.0" prefWidth="393.3333333333333" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="2.0" prefWidth="185.99999999999994" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.3333333333333" minWidth="10.0" prefWidth="222.00004069010419" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="2.0" prefWidth="356.66662597656256" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="22.0" />
   </columnConstraints>
   <rowConstraints>

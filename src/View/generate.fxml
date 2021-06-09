@@ -25,8 +25,8 @@
     <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="173.6666870117188" />
   </columnConstraints>
   <rowConstraints>
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="96.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="78.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="24.333345413208008" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="147.666654586792" vgrow="ALWAYS" />
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="2.999989827473968" prefHeight="43.0" vgrow="ALWAYS" />
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.0" vgrow="ALWAYS" />
       <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="84.0" vgrow="ALWAYS" />
@@ -36,24 +36,31 @@
        <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
            <menus>
-               <Menu fx:id="fileMenu" disable="true" mnemonicParsing="false" text="File">
-                   <items>
-                       <MenuItem fx:id="newItem" mnemonicParsing="false" onAction="#New" text="New" />
-                       <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#save" text="Save" />
-                       <MenuItem fx:id="LoadItem" mnemonicParsing="false" onAction="#load" text="Load" />
-                   </items>
+               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+
                </Menu>
                <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
                    <items>
                        <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" />
                    </items>
                </Menu>
-               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit" />
-               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help" />
-               <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About" />
+               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                   <items>
+                       <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
+                   </items>
+               </Menu>
+               <Menu fx:id="aboutMenu" mnemonicParsing="false" onAction="#about" text="About">
+                   <items>
+                       <MenuItem mnemonicParsing="false" text="About us" />
+                   </items></Menu>
+               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
+                   <items>
+                       <MenuItem mnemonicParsing="false" text="Exit the game" />
+                   </items>
+               </Menu>
            </menus>
            <GridPane.margin>
-               <Insets bottom="120.0" />
+               <Insets bottom="50.0" />
            </GridPane.margin>
        </MenuBar>
       <Button fx:id="generateButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#customSizeMazeGenerator" prefHeight="43.0" prefWidth="108.0" GridPane.columnIndex="5" GridPane.rowIndex="5">

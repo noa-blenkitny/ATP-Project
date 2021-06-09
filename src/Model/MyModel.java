@@ -32,7 +32,7 @@ public class MyModel extends Observable implements IModel
     private int playerCol;
     private int goalPositionRow;
     private int goalPositionCol;
-
+    private boolean reachedGoal;
     public MyModel()
     {
         generateMazeServer = new Server(5400, 1000, new ServerStrategyGenerateMaze());
@@ -43,6 +43,7 @@ public class MyModel extends Observable implements IModel
         goalPositionRow= 0 ;
         startPositionRow = 0 ;
         startPositionCol = 0 ;
+        reachedGoal = false;
 
     }
 
@@ -87,6 +88,7 @@ public class MyModel extends Observable implements IModel
         startPositionCol = maze.getStartPosition().getColumnIndex();
         playerRow = startPositionRow;
         playerCol = startPositionCol;
+        reachedGoal = false;
         setChanged();
         notifyObservers("maze generated");
     }
@@ -188,10 +190,13 @@ public class MyModel extends Observable implements IModel
                 break;
 
         }
-        if(playerCol == goalPositionCol && playerRow == goalPositionRow)
+        if(playerCol == goalPositionCol && playerRow == goalPositionRow && reachedGoal == false)
         {
+            reachedGoal = true;
             setChanged();
             notifyObservers("reached goal position"); //todo: remmember to move the player in this case also
+
+
         }
         else
         {
@@ -238,6 +243,7 @@ public class MyModel extends Observable implements IModel
             startPositionCol = maze.getStartPosition().getColumnIndex();
             fileInputStream.close();
             objectInputStream.close();
+            reachedGoal = false;
             setChanged();
             notifyObservers("loaded a maze");
         }

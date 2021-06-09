@@ -6,7 +6,10 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,6 +19,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.transform.Scale;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.net.URL;
@@ -175,10 +180,11 @@ public class mazeWindowController extends AView implements Initializable, Observ
         String change = (String) arg;
         switch (change){
             case "maze generated" -> mazeGenerated();
+            case "loaded a maze" -> mazeGenerated();
             case "updated player position" -> playerMoved();
             case "maze solved" -> mazeSolved();
             case "invalid params" -> invalidParamAlert("Invalid parameter entered.\nPlease enter an integer between 2 to 1000.");
-            //case "reached goal position" ->
+            case "reached goal position" -> reachedGoal();
             default -> System.out.println("Not implemented change: " + change);
         }
     }
@@ -188,7 +194,20 @@ public class mazeWindowController extends AView implements Initializable, Observ
         mazeDisplayer.setSolution(myViewModel.getSolution());
     }
 
-
+    private void reachedGoal()
+    {
+        try{
+            mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerCol());
+            Stage newStage = new Stage();
+            newStage.setTitle("Good Game!");
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            Parent root = fxmlLoader.load(getClass().getResource("reachedGoalPosition.fxml"));
+            Scene scene = new Scene(root, 800, 500);
+            newStage.setScene(scene);
+            newStage.initModality(Modality.APPLICATION_MODAL);
+            newStage.show();
+        }catch (Exception e){ }
+    }
     private void playerMoved() {
         setPlayerPosition(myViewModel.getPlayerRow(), myViewModel.getPlayerCol());
     }
@@ -246,8 +265,12 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
     }
 
-    public void New() {
+    public void New(ActionEvent event)
+    {
+        try{
+            switchScene("generate.fxml",getStage());
 
+        }catch (Exception e){ }
 
     }
 }

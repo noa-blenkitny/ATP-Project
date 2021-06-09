@@ -24,58 +24,65 @@
       <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="20.0" prefWidth="201.33332061767578" />
   </columnConstraints>
   <rowConstraints>
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="175.66666666666666" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="45.33332443237305" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="238.66667556762695" vgrow="ALWAYS" />
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="105.0" vgrow="ALWAYS" />
       <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="47.66668192545575" vgrow="ALWAYS" />
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="105.0" vgrow="ALWAYS" />
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="47.0" vgrow="ALWAYS" />
   </rowConstraints>
    <children>
-      <Button fx:id="womenButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#women" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+      <Button fx:id="womenButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#women" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
-      <Button fx:id="monkeyButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#monkey" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Button fx:id="monkeyButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#monkey" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
-      <Button fx:id="foxButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fox" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+      <Button fx:id="foxButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fox" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
-      <Button fx:id="gazelleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gazelle" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Button fx:id="gazelleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#gazelle" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
-      <Button fx:id="childButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#child" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Button fx:id="childButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#child" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
-      <Button fx:id="manButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#man" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+      <Button fx:id="manButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#man" prefHeight="97.0" prefWidth="111.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin></Button>
        <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
            <menus>
-               <Menu fx:id="fileMenu" disable="true" mnemonicParsing="false" text="File">
-                   <items>
-                       <MenuItem fx:id="newItem" mnemonicParsing="false" onAction="#New" text="New" />
-                       <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#save" text="Save" />
-                       <MenuItem fx:id="LoadItem" mnemonicParsing="false" onAction="#load" text="Load" />
-                   </items>
+               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
                </Menu>
                <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
                    <items>
                        <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" />
                    </items>
                </Menu>
-               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit" />
-               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help" />
-               <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About" />
+               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                   <items>
+                       <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
+                   </items>
+               </Menu>
+               <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#about" text="About us" />
+                   </items></Menu>
+               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
+                   <items>
+                       <MenuItem mnemonicParsing="false" text="Exit the game" />
+                   </items>
+               </Menu>
            </menus>
            <GridPane.margin>
-               <Insets bottom="190.0" />
+               <Insets bottom="50.0" />
            </GridPane.margin>
        </MenuBar>
    </children>
