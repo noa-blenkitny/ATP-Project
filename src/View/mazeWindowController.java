@@ -24,7 +24,7 @@ import java.util.Observer;
 import java.util.ResourceBundle;
 
 public class mazeWindowController extends AView implements Initializable, Observer {
-    public MyViewModel myViewModel;
+    //public MyViewModel myViewModel;
 
 
     public void setViewModel(MyViewModel myViewModel) {
@@ -77,14 +77,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
         myViewModel.solveMaze();
     }
 
-    public void openFile(ActionEvent actionEvent) {
-        FileChooser fc = new FileChooser();
-        fc.setTitle("Open maze");
-        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Maze files (*.maze)", "*.maze"));
-        fc.setInitialDirectory(new File("./resources"));
-        File chosen = fc.showOpenDialog(null);
-        //...
-    }
+
 
     public void keyPressed(KeyEvent keyEvent) {
         myViewModel.movePlayer(keyEvent.getCode());
@@ -212,6 +205,36 @@ public class mazeWindowController extends AView implements Initializable, Observ
         mazeDisplayer.changePlayer(player);
     }
 
+    public void save(ActionEvent event)
+    {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File(("./resources")));
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Maze Files (*.maze)", "*.maze")
+        );
+        fileChooser.setInitialFileName("mazeGame");
+        File file = fileChooser.showSaveDialog(getStage());
+        if (file != null) {
+            myViewModel.saveMaze(file.getPath());
+        }
+    }
 
+    public void load(ActionEvent event) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("./resources"));
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Maze Files (*.maze)", "*.maze")
+        );
+        File file = fileChooser.showOpenDialog(null);
+        if(file != null)
+        {
+            myViewModel.loadMaze(file.getPath());
+        }
+    }
+
+    public void New() {
+
+
+    }
 }
 

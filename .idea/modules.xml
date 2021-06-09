@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ATP2021_Lab12.iml" filepath="$PROJECT_DIR$/ATP2021_Lab12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ATP-Project.iml" filepath="$PROJECT_DIR$/.idea/ATP-Project.iml" />
     </modules>
   </component>
 </project>

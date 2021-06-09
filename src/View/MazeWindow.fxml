@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-<?import View.MazeDisplayer ?>
+
 <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#mouseClicked" prefHeight="483.0" prefWidth="614.0" stylesheets="@mazeWindowDesign.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.mazeWindowController">
     <left>
         <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="259.0" spacing="5.0" BorderPane.alignment="CENTER">
@@ -73,13 +73,14 @@
     <top>
         <VBox BorderPane.alignment="CENTER">
             <children>
-                <MenuBar>
+                <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
+
                     <menus>
                         <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
                             <items>
-                                <MenuItem fx:id="newItem" mnemonicParsing="false" onAction="#openFile" text="New" />
+                                <MenuItem fx:id="newItem" mnemonicParsing="false" onAction="#New" text="New" />
                                 <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#save" text="Save" />
-                        <MenuItem fx:id="LoadItem" mnemonicParsing="false" onAction="#load" text="Load" />
+                                <MenuItem fx:id="LoadItem" mnemonicParsing="false" onAction="#load" text="Load" />
                             </items>
                         </Menu>
                         <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
@@ -87,20 +88,34 @@
                                 <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" />
                             </items>
                         </Menu>
-                        <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit" />
-                  <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help" />
-                  <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About" />
+                        <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About us" />
+                     </items></Menu>
+                        <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Exit the game" />
+                     </items>
+                  </Menu>
                     </menus>
+                    <GridPane.margin>
+                        <Insets bottom="50.0" />
+                    </GridPane.margin>
                 </MenuBar>
             </children>
         </VBox>
     </top>
    <center>
-      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="AS_NEEDED"  maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"  pannable="false" prefHeight="430.0" prefWidth="298.0" BorderPane.alignment="CENTER_RIGHT">
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="false" prefHeight="430.0" prefWidth="298.0" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER_RIGHT">
          <content>
               <Pane fx:id="mazePane" maxHeight="${scrollPane.height}" maxWidth="${scrollPane.width}" prefHeight="${scrollPane.height}" prefWidth="${scrollPane.width}">
                   <children>
-                      <MazeDisplayer fx:id="mazeDisplayer" onMouseDragged="#mouseDragged" onScroll="#scroll" height="${mazePane.height}" imageChild="./resources/images/childR1.png" imageFileNamePlayer="resources/images/foxR1.png" imageFileNameWall="./resources/images/bush2.png" imageFox="./resources/images/foxR1.png" imageGazelle="./resources/images/gazelleR1.png" imageGoalPosition="resources/images/solImage.PNG" imageMan="./resources/images/manR1.PNG" imageMonkey="./resources/images/foxR1.png" imageSolutionPath="resources/images/solutionPath.png" imageWoman="./resources/images/womemR1.PNG" onKeyPressed="#keyPressed" width="${mazePane.width}" />
+                      <MazeDisplayer fx:id="mazeDisplayer" height="${mazePane.height}" imageChild="./resources/images/childR1.png" imageFileNamePlayer="resources/images/foxR1.png" imageFileNameWall="./resources/images/bush2.png" imageFox="./resources/images/foxR1.png" imageGazelle="./resources/images/gazelleR1.png" imageGoalPosition="resources/images/solImage.PNG" imageMan="./resources/images/manR1.PNG" imageMonkey="./resources/images/foxR1.png" imageSolutionPath="resources/images/solutionPath.png" imageWoman="./resources/images/womemR1.PNG" onKeyPressed="#keyPressed" onMouseDragged="#mouseDragged" onScroll="#scroll" width="${mazePane.width}" />
                   </children>
                   <padding>
                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
