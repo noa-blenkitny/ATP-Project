@@ -7,16 +7,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Observer;
 
 public abstract class AView implements IView, Observer {
 
     private static Stage stage;
+    protected static MediaPlayer mp;
+    protected static Media me;
 
     public static Stage getPreviousStage() {
         return previousStage;
@@ -133,5 +138,28 @@ public abstract class AView implements IView, Observer {
     public void exit(ActionEvent actionEvent) {
         getStage().fireEvent(
                 new WindowEvent(getStage(), WindowEvent.WINDOW_CLOSE_REQUEST));
+    }
+    public void chooseMusic(String scene)
+    {
+        if (mp != null)
+        {
+          //  mp.pause();
+            mp.stop();
+
+        }
+        String path="";
+        switch(scene)
+        {
+            case "open":
+                path="resources/media/In the Jungle, the mighty jungle....mp3";
+                break;
+            case "maze":
+                path = "resources/media/jungleDrums.mpeg";
+                break;
+        }
+        me=new Media(new File(path).toURI().toString());
+
+        mp = new MediaPlayer(me);
+        mp.play();
     }
 }

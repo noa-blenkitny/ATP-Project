@@ -37,6 +37,7 @@ public class Main extends Application {
         MyViewController myViewController = (MyViewController)fxmlLoader.getController();
         myViewController.setViewModel(myViewModel);
         myViewController.setPrimaryStage(primaryStage);
+        myViewController.chooseMusic("open");
         SetStageCloseEvent(primaryStage, model);
 
     }

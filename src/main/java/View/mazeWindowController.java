@@ -41,8 +41,6 @@ public class mazeWindowController extends AView implements Initializable, Observ
         this.myViewModel.addObserver(this);
     }
     public Slider soundBar;
-    private MediaPlayer mp;
-    private Media me;
     public TextField textField_mazeRows;
     public TextField textField_mazeColumns;
     public MazeDisplayer mazeDisplayer;
@@ -69,9 +67,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-       // String path = new File("resources/media/jungleDrums.mpeg").getPath();
-        me= new Media(new File("resources/media/jungleDrums.mpeg").toURI().toString());
-        mp = new MediaPlayer(me);
+        chooseMusic("maze");
         soundBar.setValue(mp.getVolume() * 100);
         soundBar.valueProperty().addListener(new InvalidationListener() {
             @Override
@@ -79,7 +75,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
                 mp.setVolume(soundBar.getValue() / 100);
             }
         });
-        mp.play();
+
         playerRow.textProperty().bind(updatePlayerRow);
         playerCol.textProperty().bind(updatePlayerCol);
         mazeDisplayer.changePlayer(choosePlayerController.getChosenPlayer());
@@ -158,21 +154,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
 
     public void scroll(ScrollEvent scroll) {
-//        if (scroll.isControlDown()) {
-//            double zoom_fac = 1.05;
-//            if (scroll.getDeltaY() < 0)
-//            {
-//                zoom_fac = 2.0 - zoom_fac;
-//            }
-//            Scale newScale = new Scale();
-//            newScale.setPivotX(scroll.getX());
-//            newScale.setPivotY(scroll.getY());
-//            newScale.setX(mazeDisplayer.getScaleX() * zoom_fac);
-//            newScale.setY(mazeDisplayer.getScaleY() * zoom_fac);
-//            mazeDisplayer.getTransforms().add(newScale);
-//            scroll.consume();
-//        }
-        //namas version- zooms to top left corner
+
         double zoom_fac =0.1 ;
         if (scroll.isControlDown())
         {

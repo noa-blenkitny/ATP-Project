@@ -9,6 +9,8 @@ import algorithms.mazeGenerators.Position;
 import algorithms.search.AState;
 import algorithms.search.Solution;
 import javafx.stage.FileChooser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.net.InetAddress;
@@ -33,6 +35,7 @@ public class MyModel extends Observable implements IModel
     private int goalPositionRow;
     private int goalPositionCol;
     private boolean reachedGoal;
+    private final Logger LOG= LogManager.getLogger();
     public MyModel()
     {
         generateMazeServer = new Server(5400, 1000, new ServerStrategyGenerateMaze());
@@ -66,6 +69,7 @@ public class MyModel extends Observable implements IModel
                         is.read(decompressedMaze); //Fill decompressedMaze with bytes
                         Maze newMaze = new Maze(decompressedMaze);
                         maze = newMaze;
+                        //LOG.info()
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
