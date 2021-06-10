@@ -1,0 +1,37 @@
+#namePane
+{
+    -fx-background-image: url(images/enterNameBackground.jpg) ;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+#enterNameLable
+{
+    -fx-font-size: 48px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
+
+#nameOKButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/woodenSignTransparent.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
+#OKlable
+{
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+
+}
