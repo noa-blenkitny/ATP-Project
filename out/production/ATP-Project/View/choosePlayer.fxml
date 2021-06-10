@@ -59,11 +59,11 @@
        <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
            <menus>
-               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File" disable="true">
                </Menu>
                <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
                    <items>
-                       <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" />
+                       <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" onAction="#properties"/>
                    </items>
                </Menu>
                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
@@ -73,11 +73,11 @@
                </Menu>
                <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
                    <items>
-                       <MenuItem mnemonicParsing="false" onAction="#about" text="About us" />
+                       <MenuItem mnemonicParsing="false" text="About us" onAction="#about" />
                    </items></Menu>
                <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
                    <items>
-                       <MenuItem mnemonicParsing="false" text="Exit the game" />
+                       <MenuItem mnemonicParsing="false" text="Exit the game" onAction="#exit" />
                    </items>
                </Menu>
            </menus>
