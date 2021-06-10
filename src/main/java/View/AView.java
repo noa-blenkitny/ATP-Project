@@ -12,6 +12,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import javafx.util.Duration;
 
 import java.io.File;
 import java.io.IOException;
@@ -117,7 +118,6 @@ public abstract class AView implements IView, Observer {
             newStage.setOnHiding((new EventHandler<WindowEvent>() {
                 @Override
                 public void handle(WindowEvent event) {
-                    System.out.println("here");
                     getStage().close();
                     setStage(getPreviousStage());
 
@@ -147,19 +147,16 @@ public abstract class AView implements IView, Observer {
             mp.stop();
 
         }
-        String path="";
-        switch(scene)
-        {
-            case "open":
-                path="resources/media/In the Jungle, the mighty jungle....mp3";
-                break;
-            case "maze":
-                path = "resources/media/jungleDrums.mpeg";
-                break;
-        }
+        String path = switch (scene) {
+            case "open" -> "resources/media/In the Jungle, the mighty jungle....mp3";
+            case "maze" -> "resources/media/jungleDrums.mpeg";
+            case "goal" -> "resources/media/Applause Crowd Cheering sound effect.mp3";
+            default -> "";
+        };
         me=new Media(new File(path).toURI().toString());
-
         mp = new MediaPlayer(me);
-        mp.play();
+        mp.setAutoPlay(true);
+        mp.setOnEndOfMedia(() -> mp.seek(Duration.ZERO));
     }
+
 }

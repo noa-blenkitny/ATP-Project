@@ -4,34 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added log4j2">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_14_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/media/In the Jungle, the mighty jungle....mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
+    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added music">
+      <change afterPath="$PROJECT_DIR$/resources/media/Applause Crowd Cheering sound effect.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/maze1.maze" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/txt1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MovementDirection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MazeGenerator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/AView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/mazeWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/mazeWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MazeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MovementDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MazeGenerator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/View/AView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/View/AView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/View/mazeWindowController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/mazeWindowController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/View/mazeWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/mazeWindowController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generate.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +112,8 @@
       <workItem from="1623324845082" duration="8094000" />
       <workItem from="1623334628386" duration="1658000" />
       <workItem from="1623336316170" duration="2297000" />
+      <workItem from="1623346338357" duration="122000" />
+      <workItem from="1623349051750" duration="3892000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>
@@ -242,7 +229,13 @@
       <option name="presentableId" value="LOCAL‎00017" />
       <updated>1623332834346</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL‎00018" summary="added music">
+      <created>1623346381872</created>
+      <option name="number" value="LOCAL‎00018" />
+      <option name="presentableId" value="LOCAL‎00018" />
+      <updated>1623346381872</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +259,8 @@
     <MESSAGE value="added about scene, goal scene" />
     <MESSAGE value="updated helpWidow, AView, mazeWindowController" />
     <MESSAGE value="added log4j2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added log4j2" />
+    <MESSAGE value="added music" />
+    <option name="LAST_COMMIT_MESSAGE" value="added music" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

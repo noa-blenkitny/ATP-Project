@@ -7,6 +7,7 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -25,6 +26,7 @@ import javafx.scene.transform.Scale;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.File;
 import java.net.URL;
@@ -33,13 +35,7 @@ import java.util.Observer;
 import java.util.ResourceBundle;
 
 public class mazeWindowController extends AView implements Initializable, Observer {
-    //public MyViewModel myViewModel;
 
-
-    public void setViewModel(MyViewModel myViewModel) {
-        this.myViewModel = myViewModel;
-        this.myViewModel.addObserver(this);
-    }
     public Slider soundBar;
     public TextField textField_mazeRows;
     public TextField textField_mazeColumns;
@@ -88,14 +84,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         myViewModel.generateMaze(rows, cols);
     }
 
-    //public void MazeByHardness(int rows, int cols) {
-        //myViewModel.generateMaze(rows, cols);
-   // }
     public void solveMaze(ActionEvent actionEvent) {
         myViewModel.solveMaze();
     }
-
-
 
     public void keyPressed(KeyEvent keyEvent) {
         myViewModel.movePlayer(keyEvent.getCode());
@@ -150,7 +141,6 @@ public class mazeWindowController extends AView implements Initializable, Observ
                 }
 
             mouseEvent.consume();
-           // mazeDisplayer.requestFocus();
         }
 
     public void scroll(ScrollEvent scroll) {
@@ -171,8 +161,6 @@ public class mazeWindowController extends AView implements Initializable, Observ
             scroll.consume();
         }
     }
-
-
 
     @Override
     public void update(Observable o, Object arg) {
@@ -197,8 +185,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
     {
         try{
             mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerCol());
-            mp.stop();
-
+            chooseMusic("goal");
             Stage newStage = new Stage();
             newStage.setTitle("Good Game!");
             FXMLLoader fxmlLoader = new FXMLLoader();
@@ -206,29 +193,18 @@ public class mazeWindowController extends AView implements Initializable, Observ
             Scene scene = new Scene(root, 800, 500);
             newStage.setScene(scene);
             newStage.initModality(Modality.APPLICATION_MODAL);
-            newStage.show();
+            newStage.setOnHiding((new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+                  chooseMusic("maze");
+                }}));
+            newStage.showAndWait();
         }catch (Exception e){ }
     }
     private void playerMoved() {
         setPlayerPosition(myViewModel.getPlayerRow(), myViewModel.getPlayerCol());
     }
 
-
-    public void setOnScroll(ScrollEvent scroll) {
-        if (scroll.isControlDown()) {
-            double zoom_fac = 1.05;
-            if (scroll.getDeltaY() < 0) {
-                zoom_fac = 2.0 - zoom_fac;
-            }
-            Scale newScale = new Scale();
-            newScale.setPivotX(scroll.getX());
-            newScale.setPivotY(scroll.getY());
-            newScale.setX(mazeDisplayer.getScaleX() * zoom_fac);
-            newScale.setY(mazeDisplayer.getScaleY() * zoom_fac);
-            mazeDisplayer.getTransforms().add(newScale);
-            scroll.consume();
-        }
-    }
     protected void mazeGenerated() {
         mazeDisplayer.setSolution(null);
         mazeDisplayer.drawMaze(myViewModel.getMaze(),   myViewModel.getGoalPosition());
