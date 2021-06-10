@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="richedGoalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@reachedGoalDesign.css" />
+    </stylesheets>
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.3333333333333" minWidth="10.0" prefWidth="222.00004069010419" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="2.0" prefWidth="356.66662597656256" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="22.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="285.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="358.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="283.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="254.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="You did it!" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="GREAT!" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="You reached the goal!" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Try a harder one!" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   </children>
+</GridPane>
