@@ -18,4 +18,5 @@ public class MyViewController extends AView  {
         switchScene("choosePlayer.fxml",getStage());
     }
 
+
 }

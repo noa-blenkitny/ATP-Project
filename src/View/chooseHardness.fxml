@@ -32,30 +32,27 @@
    <children>
        <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
-           <menus>
-               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
-
-               </Menu>
-               <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
-                   <items>
-                       <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" />
-                   </items>
-               </Menu>
-               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
-                   <items>
-                       <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
-                   </items>
-               </Menu>
-               <Menu fx:id="aboutMenu" mnemonicParsing="false" onAction="#about" text="About">
-                   <items>
-                       <MenuItem mnemonicParsing="false" text="About us" />
-                   </items></Menu>
-               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
-                   <items>
-                       <MenuItem mnemonicParsing="false" text="Exit the game" />
-                   </items>
-               </Menu>
-           </menus>
+           <Menu fx:id="fileMenu" mnemonicParsing="false" text="File" disable="true">
+           </Menu>
+           <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
+               <items>
+                   <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" onAction="#properties"/>
+               </items>
+           </Menu>
+           <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+               <items>
+                   <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
+               </items>
+           </Menu>
+           <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
+               <items>
+                   <MenuItem mnemonicParsing="false" text="About us" onAction="#about" />
+               </items></Menu>
+           <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
+               <items>
+                   <MenuItem mnemonicParsing="false" text="Exit the game" onAction="#exit" />
+               </items>
+           </Menu>
            <GridPane.margin>
                <Insets bottom="50.0" />
            </GridPane.margin>

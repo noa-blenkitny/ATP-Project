@@ -2,32 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="updated helpWidow, AView, mazeWindowController">
-      <change afterPath="$PROJECT_DIR$/resources/ATPProjectJAR.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/properties.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/propertiesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/propertiesDesign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/media/jungleDrums.mpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/ATPProjectJAR.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/ATPProjectJAR.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/Observable_Example/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/Observable_Example/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/Observable_Example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/View/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/View/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/View/mazeWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/View/mazeWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/View/propertiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/View/propertiesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/View/propertiesDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/View/propertiesDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP-Project/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATP-Project/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/IModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MazeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MovementDirection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MyModel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MyModel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MyModel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Model/MyModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Observable_Example/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Observable_Example/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/Observable_Example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/AView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/IView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/MazeDisplayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/MyViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/chooseHardnessController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/choosePlayerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/generateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/View/mazeWindowController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/ViewModel/MyViewModel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATP2021_Lab12/ViewModel/MyViewModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ATPProjectJAR.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ATPProjectJAR.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/leavesBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/leavesBackground.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/MyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observable_Example/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observable_Example/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observable_Example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeDisplayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/aboutDisign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/aboutDisign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/aboutWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/aboutWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/chooseHardness.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/chooseHardness.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/chooseHardnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/chooseHardnessController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/choosePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/choosePlayer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/generateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/generateDesigner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/generateDesigner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/helpWindowDesighn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/helpWindowDesighn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/mazeWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/mazeWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/mazeWindowDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/mazeWindowDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/richedGoalDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/reachedGoalDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/richedGoalPosition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/reachedGoalPosition.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/propertiesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/propertiesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/propertiesDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/propertiesDesign.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +79,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/ATPProjectJAR.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/media" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -66,6 +90,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\noa15\ATP-Project\resources\media" />
+      <recent name="C:\Users\noa15\ATP-Project\resources" />
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,7 +105,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="View.Main" />
       <module name="ATP-Project" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\Dell\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\noa15\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml,javafx.media " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="View.*" />
@@ -121,6 +147,11 @@
       <workItem from="1623240906019" duration="670000" />
       <workItem from="1623241594851" duration="386000" />
       <workItem from="1623241997748" duration="17951000" />
+      <workItem from="1623310472331" duration="46000" />
+      <workItem from="1623310537528" duration="2984000" />
+      <workItem from="1623314265198" duration="2928000" />
+      <workItem from="1623320833437" duration="2309000" />
+      <workItem from="1623324845082" duration="6747000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>

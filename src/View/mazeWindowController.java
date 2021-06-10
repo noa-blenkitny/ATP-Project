@@ -2,6 +2,7 @@ package View;
 
 import Model.MyModel;
 import ViewModel.MyViewModel;
+import javafx.beans.InvalidationListener;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -12,11 +13,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.transform.Scale;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
@@ -36,7 +40,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         this.myViewModel = myViewModel;
         this.myViewModel.addObserver(this);
     }
-
+    public Slider soundBar;
+    private MediaPlayer mp;
+    private Media me;
     public TextField textField_mazeRows;
     public TextField textField_mazeColumns;
     public MazeDisplayer mazeDisplayer;
@@ -63,6 +69,17 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+       // String path = new File("resources/media/jungleDrums.mpeg").getPath();
+        me= new Media(new File("resources/media/jungleDrums.mpeg").toURI().toString());
+        mp = new MediaPlayer(me);
+        soundBar.setValue(mp.getVolume() * 100);
+        soundBar.valueProperty().addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                mp.setVolume(soundBar.getValue() / 100);
+            }
+        });
+        mp.play();
         playerRow.textProperty().bind(updatePlayerRow);
         playerCol.textProperty().bind(updatePlayerCol);
         mazeDisplayer.changePlayer(choosePlayerController.getChosenPlayer());
@@ -198,6 +215,8 @@ public class mazeWindowController extends AView implements Initializable, Observ
     {
         try{
             mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerCol());
+            mp.stop();
+
             Stage newStage = new Stage();
             newStage.setTitle("Good Game!");
             FXMLLoader fxmlLoader = new FXMLLoader();

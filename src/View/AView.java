@@ -1,6 +1,8 @@
 package View;
 
 import ViewModel.MyViewModel;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -8,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +19,16 @@ import java.util.Observer;
 public abstract class AView implements IView, Observer {
 
     private static Stage stage;
+
+    public static Stage getPreviousStage() {
+        return previousStage;
+    }
+
+    public static void setPreviousStage(Stage previousStage) {
+        AView.previousStage = previousStage;
+    }
+
+    public static Stage previousStage;
     protected MyViewModel myViewModel;
 
     public static void setStage(Stage stage) {
@@ -93,11 +106,21 @@ public abstract class AView implements IView, Observer {
             Parent root = fxmlLoader.load();
             AView newView = fxmlLoader.getController();
             newView.setViewModel(this.myViewModel);
+            setPreviousStage(getStage());
             setStage(newStage);
             Scene scene = new Scene(root, 800, 500);
             newStage.setScene(scene);
             newStage.initModality(Modality.APPLICATION_MODAL);
-            newStage.show();
+            newStage.setOnHiding((new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+                    System.out.println("here");
+                    getStage().close();
+                    setStage(getPreviousStage());
+
+                }}));
+            newStage.showAndWait();
+
         }
         catch (Exception e)
         {
@@ -108,5 +131,9 @@ public abstract class AView implements IView, Observer {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setContentText(Message);
         alert.show();
+    }
+    public void exit(ActionEvent actionEvent) {
+        getStage().fireEvent(
+                new WindowEvent(getStage(), WindowEvent.WINDOW_CLOSE_REQUEST));
     }
 }
