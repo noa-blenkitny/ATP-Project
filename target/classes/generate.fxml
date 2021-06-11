@@ -14,7 +14,7 @@
 
 <GridPane fx:id="generatePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.generateController">
   <stylesheets>
-      <URL value="@generateDesigner.css" />
+      <URL value="@MainStyle.css" />
   </stylesheets>
     <columnConstraints>
       <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="84.0" />
@@ -33,7 +33,7 @@
     <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="59.66668701171875" vgrow="ALWAYS" />
   </rowConstraints>
    <children>
-       <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
+       <MenuBar fx:id="menuBar" stylesheets="@menuBarStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
            <menus>
                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File" disable="true">

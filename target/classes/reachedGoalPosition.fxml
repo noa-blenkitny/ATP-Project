@@ -8,7 +8,7 @@
 
 <GridPane fx:id="richedGoalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@reachedGoalDesign.css" />
+        <URL value="@menuBarStyle.css" />
     </stylesheets>
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.3333333333333" minWidth="10.0" prefWidth="222.00004069010419" />

@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added music">
-      <change afterPath="$PROJECT_DIR$/resources/media/Applause Crowd Cheering sound effect.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MazeGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/AView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/mazeWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/mazeWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MazeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/AView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/AView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/mazeWindowController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/mazeWindowController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/mazeWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/mazeWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aboutWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aboutWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chooseHardness.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chooseHardness.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/choosePlayer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helpWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/properties.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reachedGoalPosition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/reachedGoalPosition.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,14 +47,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/media" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.096153855" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
@@ -62,6 +70,7 @@
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\target\classes" />
       <recent name="C:\Users\noa15\ATP-Project\resources\media" />
       <recent name="C:\Users\noa15\ATP-Project\src\main\resources" />
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
@@ -74,13 +83,24 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="View.Main" />
       <module name="ATP-Project" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\noa15\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml,javafx.media " />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\Dell\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml,javafx.media " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="View.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,6 +134,7 @@
       <workItem from="1623336316170" duration="2297000" />
       <workItem from="1623346338357" duration="122000" />
       <workItem from="1623349051750" duration="3892000" />
+      <workItem from="1623403836189" duration="5482000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>

@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import View.MazeDisplayer?>
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#mouseClicked" prefHeight="483.0" prefWidth="614.0" stylesheets="@mazeWindowDesign.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.mazeWindowController">
+<BorderPane fx:id="mazeWindowPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#mouseClicked" prefHeight="483.0" prefWidth="614.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.mazeWindowController">
     <left>
         <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="259.0" spacing="5.0" BorderPane.alignment="CENTER">
             <children>
@@ -74,7 +74,7 @@
     <top>
         <VBox BorderPane.alignment="CENTER">
             <children>
-                <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
+                <MenuBar fx:id="menuBar" stylesheets="@menuBarStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
                     <menus>
                         <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">

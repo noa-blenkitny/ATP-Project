@@ -1,8 +1,7 @@
 .root {
     -fx-background-color: #2ea7bd;
 }
-
-#startButton
+.button
 {
     -fx-background-color: transparent;
     -fx-background-image: url(images/woodenSignTransparent.png) center center fixed;
@@ -18,46 +17,148 @@
     -fx-background-size: stretch stretch;
 
 }
-#startLabel
+
+#generatePane
+{
+    -fx-background-image: url(images/enterSizeBackground.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}
+#choosePlayerPane
+{
+    -fx-background-image: url(images/choosePlayerBackround.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+#hardnessPane
+{
+    -fx-background-image: url(images/middleBackground1.jpeg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+
+}
+#mazePane
+{
+    -fx-background-color: white;
+    -fx-background-image: url(images/lightOmbre2.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}
+#mazeWindowPane {
+    -fx-background-image: url(images/river.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}
+#richedGoalPane
+{
+    -fx-background-image: url(images/goalBackground.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}
+
+#monkeyButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/staticMonkey.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+#gazelleButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/GazelleR2.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+
+}
+
+#foxButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/staticFox.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+
+#childButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/childR2.png) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+#womenButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/womenR2.PNG) center center fixed;
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+#manButton
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url(images/manR1.PNG) center center fixed;
+
+    -fx-background-size: stretch stretch ;
+    -fx-background-repeat: no-repeat;
+}
+
+.button .label
+{
+
+    -fx-font-size: 25px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
+
+Label
 {
     -fx-font-size: 25px strech  ;
     -fx-font-family: "MV Boli";
     -fx-text-fill: white;
     -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
-
 }
-#menuBar
-{
-    -fx-background-color: transparent;
 
-}
-.menu-bar .label
+#rowLabel
 {
-    -fx-font-size: 15px strech  ;
+    -fx-font-size: 35px strech  ;
     -fx-font-family: "MV Boli";
     -fx-text-fill: white;
-}
-.menu-bar .menu:hover,
-.menu-bar .menu:showing{
-    -fx-background-color: transparent;
-}
-.context-menu{
-    -fx-background-color: white;
-    -fx-effect: dropshadow(gaussian, black, 10.0, 0.5, 0.0, 0.0);
-}
-.context-menu .label
-{
-    -fx-font-size: 15px strech  ;
-    -fx-font-family: "MV Boli";
-    -fx-text-fill: black;
-}
-.context-menu:hover
-{
-    -fx-background-color: #cff8a9
-}
-.menu-item:hover,
-.menu-item .label:hover
-{
-    -fx-background-color: transparent;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
 }
 
+#colLabel
+{
+    -fx-font-size: 35px strech  ;
+    -fx-font-family: "MV Boli";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+}
+
+
+.choice-box .label
+{
+
+    -fx-text-fill: #000000;
+}
+
+#soundBarIcon
+{
+    -fx-image: url(images/whiteSoundIconTransperant.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: stretch stretch;
+}

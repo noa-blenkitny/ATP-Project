@@ -1,4 +1,4 @@
-.root {
+#mazeWindowPane {
     -fx-background-image: url(images/river.jpg);
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
