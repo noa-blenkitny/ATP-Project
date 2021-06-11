@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added music">
-      <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
+    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="updated CSS files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aboutWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aboutWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chooseHardness.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chooseHardness.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/choosePlayer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aboutDisign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chooseHardnessDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/helpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helpWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/properties.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/properties.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/reachedGoalPosition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/reachedGoalPosition.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enterName.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enterNameDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generateDesigner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helpWindowDesighn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pauseDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertiesDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reachedGoalDesign.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <workItem from="1623336316170" duration="2297000" />
       <workItem from="1623346338357" duration="122000" />
       <workItem from="1623349051750" duration="3892000" />
-      <workItem from="1623403836189" duration="5482000" />
+      <workItem from="1623403836189" duration="5964000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>
@@ -256,7 +255,21 @@
       <option name="presentableId" value="LOCAL‎00018" />
       <updated>1623346381872</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated CSS files">
+      <created>1623409423601</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623409423601</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated CSS files">
+      <created>1623409474536</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623409474536</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +294,8 @@
     <MESSAGE value="updated helpWidow, AView, mazeWindowController" />
     <MESSAGE value="added log4j2" />
     <MESSAGE value="added music" />
-    <option name="LAST_COMMIT_MESSAGE" value="added music" />
+    <MESSAGE value="updated CSS files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated CSS files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
