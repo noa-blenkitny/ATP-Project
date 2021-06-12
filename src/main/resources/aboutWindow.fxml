@@ -8,25 +8,25 @@
 
 <GridPane fx:id="aboutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@aboutDisign.css" />
+        <URL value="@menuBarStyle.css" />
     </stylesheets>
     <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.0" minWidth="0.0" prefWidth="0.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="895.0" minWidth="10.0" prefWidth="895.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="0.0" prefWidth="0.0" />
-  </columnConstraints>
-  <rowConstraints>
-      <RowConstraints maxHeight="279.0" minHeight="0.0" prefHeight="207.66668701171875" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="236.0" minHeight="7.0" prefHeight="88.00002034505206" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="391.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="534.0" minHeight="10.0" prefHeight="176.6666158040365" vgrow="SOMETIMES" />
-  </rowConstraints>
-   <children>
-      <Label text="A Jungle Adventure Maze Game " GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label text="Maze Generation is based on Prim's algorithm" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Label text="Solving Algorithms are BFS, DFS, BEST" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label text="Made by Keren Diane and Noa Blenkitny" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-   </children>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.0" minWidth="0.0" prefWidth="0.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="895.0" minWidth="10.0" prefWidth="895.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="0.0" prefWidth="0.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="279.0" minHeight="0.0" prefHeight="207.66668701171875" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="236.0" minHeight="7.0" prefHeight="88.00002034505206" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="391.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="534.0" minHeight="10.0" prefHeight="176.6666158040365" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="A Jungle Adventure Maze Game " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Maze Generation is based on Prim's algorithm" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="Solving Algorithms are BFS, DFS, BEST" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label text="Made by Keren Diane and Noa Blenkitny" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    </children>
 </GridPane>

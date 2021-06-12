@@ -8,7 +8,10 @@ import algorithms.mazeGenerators.MyMazeGenerator;
 import algorithms.mazeGenerators.Position;
 import algorithms.search.AState;
 import algorithms.search.Solution;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
+import javafx.util.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -36,10 +39,13 @@ public class MyModel extends Observable implements IModel
     private int goalPositionCol;
     private boolean reachedGoal;
     private final Logger LOG= LogManager.getLogger();
+
     public MyModel()
     {
         generateMazeServer = new Server(5400, 1000, new ServerStrategyGenerateMaze());
+        LOG.info("Generate maze server initialized at port 5400");
         solveMazeServer = new Server(5401 , 1000, new ServerStrategySolveSearchProblem());
+        LOG.info("Solve maze server initialized at port 5401");
         playerRow = 0 ;
         playerCol = 0 ;
         goalPositionCol = 0;
@@ -50,6 +56,11 @@ public class MyModel extends Observable implements IModel
 
     }
 
+    /**
+     * helper fun to generate the maze using the server
+     * @param rows the numer of rows of the maze
+     * @param cols the number of cols of the maze
+     */
     private void serverGenerateMaze(int rows, int cols)
     {
         try {
@@ -57,10 +68,12 @@ public class MyModel extends Observable implements IModel
                 @Override
                 public void clientStrategy(InputStream inFromServer, OutputStream outToServer) {
                     try {
+
                         ObjectOutputStream toServer = new ObjectOutputStream(outToServer);
                         ObjectInputStream fromServer = new ObjectInputStream(inFromServer);
                         toServer.flush();
                         int[] mazeDimensions = new int[]{rows, cols};
+                        LOG.info("User " +  InetAddress.getLocalHost() + "requested to generate a maze of size [" + rows + "] [" + cols + "]" );
                         toServer.writeObject(mazeDimensions); //send maze dimensions to server
                         toServer.flush();
                         byte[] compressedMaze = (byte[]) fromServer.readObject(); //read generated maze (compressed with MyCompressor) from server
@@ -69,19 +82,23 @@ public class MyModel extends Observable implements IModel
                         is.read(decompressedMaze); //Fill decompressedMaze with bytes
                         Maze newMaze = new Maze(decompressedMaze);
                         maze = newMaze;
-                        //LOG.info()
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        LOG.error("Caught exception: " + e);
+
                     }
                 }
             });
             client.communicateWithServer();
         } catch (UnknownHostException e) {
-            e.printStackTrace();
+            LOG.error("Caught UnknownHostException: " + e);
         }
     }
 
-
+    /**
+     * generates a maze
+     * @param rows - the number of rows of the maze
+     * @param cols - the number of cols of the maze
+     */
     @Override
     public void generateMaze(int rows, int cols)
     {
@@ -97,6 +114,9 @@ public class MyModel extends Observable implements IModel
         notifyObservers("maze generated");
     }
 
+    /**
+     * helper fun to solve the maze using the server
+     */
     private void serverSolveMaze()
     {
         try {
@@ -104,27 +124,37 @@ public class MyModel extends Observable implements IModel
                 @Override
                 public void clientStrategy(InputStream inFromServer, OutputStream outToServer) {
                     try {
+                        LOG.info("User " + InetAddress.getLocalHost() + " requested to solve a maze");
                         ObjectOutputStream toServer = new ObjectOutputStream(outToServer);
                         ObjectInputStream fromServer = new ObjectInputStream(inFromServer);
                         toServer.writeObject(maze); //send maze to server
                         toServer.flush();
                         Solution mazeSolution = (Solution) fromServer.readObject(); //read generated maze (compressed with MyCompressor) from server
                         solution = mazeSolution;
+                        LOG.info("Server succeeded to solve the maze of user " + InetAddress.getLocalHost()+ "the length of the solution is " + solution.getSolutionPath().size() );
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        LOG.error("Caught exception: " + e);
                     }
                 }
             });
             client.communicateWithServer();
         } catch (UnknownHostException e) {
-            e.printStackTrace();
+            LOG.error("Caught UnknownHostException: " + e);
         }
     }
+
+    /**
+     * @return the soultion of the IModel's maze
+     */
     @Override
     public Solution getSolution()
     {
         return solution;
     }
+
+    /**
+     * solves the maze of the IModel
+     */
     @Override
     public void solveMaze()
     {
@@ -133,6 +163,10 @@ public class MyModel extends Observable implements IModel
         notifyObservers("maze solved");
     }
 
+    /**
+     * moves the player to the movementDirection if the move is legal.
+     * @param movementDirection the Direction the player wants to move
+     */
     @Override
     public void updatePlayerPosition(Direction movementDirection)
     {
@@ -198,7 +232,7 @@ public class MyModel extends Observable implements IModel
         {
             reachedGoal = true;
             setChanged();
-            notifyObservers("reached goal position"); //todo: remmember to move the player in this case also
+            notifyObservers("reached goal position");
 
 
         }
@@ -208,6 +242,10 @@ public class MyModel extends Observable implements IModel
             notifyObservers("updated player position");
         }
     }
+
+    /**
+     * @param filePath the path where you want to create the maze file into.
+     */
     @Override
     public void saveMaze(String filePath)
     {
@@ -221,15 +259,18 @@ public class MyModel extends Observable implements IModel
             objectOutputStream.flush();
             fileOutputStream.close();
             objectOutputStream.close();
-
+            LOG.info("saved a maze to the disk");
         }
         catch (Exception e)
         {
-            e.printStackTrace();
+            LOG.error("Caught exception: " + e);
         }
 
     }
 
+    /**
+     * @param filePath the file path of the maze file you want to load
+     */
     @Override
     public void loadMaze(String filePath)
     {
@@ -248,93 +289,82 @@ public class MyModel extends Observable implements IModel
             fileInputStream.close();
             objectInputStream.close();
             reachedGoal = false;
+            LOG.info("loaded a maze from the disk");
             setChanged();
             notifyObservers("loaded a maze");
         }
         catch (Exception e)
         {
-            e.printStackTrace();
+            LOG.error("Caught exception: " + e);
         }
     }
+
+    /**
+     * @return the maze matrix of the model.
+     */
     @Override
     public int[][] getMaze() {
         return maze.getMazeMatrix();
     }
 
-
-
-
-
-
-
+    /**
+     * @return the row index of the player
+     */
     @Override
     public int getPlayerRow() {
         return playerRow;
     }
 
+    /**
+     * @return the column index of the player
+     */
     @Override
     public int getPlayerCol() {
         return playerCol;
     }
-    public void setPlayerRow(int playerRow) {
-        this.playerRow = playerRow;
-    }
 
-    public void setPlayerCol(int playerCol) {
-        this.playerCol = playerCol;
-    }
-
-
+    /**
+     * @param o add observer o
+     */
     @Override
     public void assignObserver(Observer o) {
         this.addObserver(o);
     }
 
-
-
+    /**
+     * @return the row index of the goal position of the maze
+     */
     @Override
     public int getGoalRowPosition() {
         return goalPositionRow;
     }
 
+    /**
+     * @return the column index of the goal position of the maze
+     */
     @Override
     public int getGoalColPosition() {
         return goalPositionCol;
     }
-    public void setGoalPositionRow(int goalPositionRow) {
-        this.goalPositionRow = goalPositionRow;
-    }
 
-    public void setGoalPositionCol(int goalPositionCol) {
-        this.goalPositionCol = goalPositionCol;
-    }
-
-
-    @Override
-    public int getStartRowPosition() {
-        return maze.getStartPosition().getRowIndex();
-    }
-
-    @Override
-    public int getStartColPosition() {
-        return maze.getStartPosition().getColumnIndex();
-    }
-
-    @Override
-    public void setMaze(Maze newMaze) {
-        this.maze = newMaze;
-
-    }
+    /**
+     * start the servers
+     */
     public void startServers() {
         startServers = true;
         generateMazeServer.start();
         solveMazeServer.start();
+        LOG.info("started servers");
     }
 
+    /**
+     * stop the servers
+     */
     public void stopServers() {
         if(startServers){
             generateMazeServer.stop();
             solveMazeServer.stop();
+            LOG.info("stopped servers");
         }
     }
 }

@@ -43,43 +43,6 @@ public class propertiesController extends AView implements Initializable
         generatingAlgorithm.getSelectionModel().selectedItemProperty().addListener((v,oldValue, newValue)->generatingAlgorithm.setValue(newValue));
         searchingAlgorithm.getSelectionModel().selectedItemProperty().addListener((v,oldValue, newValue)->searchingAlgorithm.setValue(newValue));
 
-
-//     try {
-//         config = Configurations.getInstance();
-//         String searchingAlgo = config.getMazeSearchingAlgorithm().getName();
-//         String generatingAlgo = config.getMazeGeneratingAlgorithm().getName();
-//         switch (searchingAlgo)
-//         {
-//             case "BestFirstSearch":
-//                 generatingAlgorithm.setValue("Best");
-//                 break;
-//             case "DepthFirstSearch":
-//                 generatingAlgorithm.setValue("DFS");
-//                 break;
-//             case "BreadthFirstSearch":
-//                 generatingAlgorithm.setValue("BFS");
-//                 break;
-//         }
-//         switch (generatingAlgo)
-//         {
-//             case "MyMazeGenerator":
-//                 generatingAlgorithm.setValue("My");
-//                 break;
-//             case "SimpleMazeGenerator":
-//                 generatingAlgorithm.setValue("Simple");
-//                 break;
-//             case "EmptyMazeGenerator":
-//                 generatingAlgorithm.setValue("Empty");
-//                 break;
-//         }
-//
-//         threadSize.setText(String.valueOf(config.getThreadPoolSize()));
-//     }
-//
-//     catch (Exception e)
-//     {
-//         e.printStackTrace();
-//     }
     }
     public void updateClicked(){
 
@@ -117,9 +80,6 @@ public class propertiesController extends AView implements Initializable
 
     @Override
     public void update(Observable o, Object arg) {
-
-    }
-    public void SetStageHideEvent(){
 
     }
 }

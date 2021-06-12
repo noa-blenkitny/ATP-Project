@@ -4,22 +4,204 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="updated CSS files">
+    <list default="true" id="f0bc9664-a21d-4707-8eda-9c339c7ec822" name="Default Changelist" comment="added music">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ATPProjectJAR.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ATP-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATP-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2021_12_17__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2021_12_17__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ATPProjectJAR.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aboutDisign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chooseHardnessDesign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayerDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/GazelleL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/GazelleR2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/GazelleR2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/abouPic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/boyLGIF.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/bush1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/bush2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/bush2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/bush3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL1T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL2T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childL3T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/childR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childR2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/childR2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/childR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/foxR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxR2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/foxR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/gazelleL1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/gazelleL3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/gazelleR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/gazelleR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/gazelleR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/goalBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/goalBackground.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/goalImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/leaves.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/lightOmbre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/lightOmbre2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/lightOmbre2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manR1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/manR1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manR2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/manR3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/mario.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/maxresdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/mazeBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/middleBackground.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/monkey1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/monkey1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/monkey2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/monkey3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/ombreBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/ombreBackground2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/river.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/river.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/solImage.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/solImage.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/solutionPath.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/solutionPath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/startButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/staticFox.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/staticFox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/staticMonkey.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/staticMonkey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/volumBarIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/whiteSounIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/whiteSoundIconTransperant.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/whiteSoundIconTransperant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenR1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/womenR1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenR2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/womenR2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/womenR3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/woodenSignTransparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/woodenSignTransparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/IModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/AView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/MazeDisplayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/chooseHardnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/chooseHardnessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/choosePlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/choosePlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/generateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/generateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/propertiesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/propertiesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ViewModel/MyViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ViewModel/MyViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MazeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MazeWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/aboutDisign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/aboutWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aboutWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chooseHardness.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chooseHardness.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chooseHardnessDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/choosePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/choosePlayer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/choosePlayerDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/enterName.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/enterNameDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generateDesigner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/helpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/helpWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/helpWindowDesighn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mazeWindowDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pause.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pauseDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/propertiesDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reachedGoalDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reachedGoalPosition.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reachedGoalPosition.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ATPProjectJAR.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ATPProjectJAR.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MazeWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/IModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/IModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MyModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MyModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/AView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/AView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/AView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/IView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/IView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/MazeDisplayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/MazeDisplayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/chooseHardnessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/chooseHardnessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/choosePlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/choosePlayerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/generateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/generateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/propertiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/propertiesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ViewModel/MyViewModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ViewModel/MyViewModel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ViewModel/MyViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ViewModel/MyViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aboutWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chooseHardness.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/choosePlayer.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enterName.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enterNameDesign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generateDesigner.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/helpWindowDesighn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mazeWindowDesign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pauseDesign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertiesDesign.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/reachedGoalDesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generate.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helpWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/GazelleL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/GazelleR2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/GazelleR2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/abouPic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/boyLGIF.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/bush1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/bush2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/bush2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/bush3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL1T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL2T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childL3T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/childR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childR2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/childR2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/childR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/foxR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxR2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/foxR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/gazelleL1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/gazelleL3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/gazelleR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/gazelleR1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/gazelleR3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/goalBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/goalBackground.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/goalImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/leaves.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/lightOmbre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/lightOmbre2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/lightOmbre2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manR1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/manR1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manR2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/manR3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/mario.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/maxresdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/mazeBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/middleBackground.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/monkey1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/monkey1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/monkey2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/monkey3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/ombreBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/ombreBackground2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/river.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/river.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/solImage.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/solImage.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/solutionPath.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/solutionPath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/startButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/staticFox.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/staticFox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/staticMonkey.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/staticMonkey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/volumBarIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/whiteSounIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/whiteSoundIconTransperant.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/whiteSoundIconTransperant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenR1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/womenR1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenR2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/womenR2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/womenR3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/woodenSignTransparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/woodenSignTransparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menuBarStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menuBarStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pause.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reachedGoalPosition.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +211,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
         <option value="CSS File" />
       </list>
     </option>
@@ -39,6 +221,14 @@
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1tZUMbZtJbspKzwQubL64YwcdwR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,30 +236,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/ATPProjectJAR.jar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.096153855" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\noa15\ATP-Project\resources\media" />
       <recent name="C:\Users\noa15\ATP-Project\resources" />
+      <recent name="C:\Users\noa15\ATP-Project\resources\media" />
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\target\classes" />
       <recent name="C:\Users\noa15\ATP-Project\resources\media" />
       <recent name="C:\Users\noa15\ATP-Project\src\main\resources" />
       <recent name="C:\Users\Dell\IdeaProjects\ATP-Project\resources" />
@@ -82,7 +267,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="View.Main" />
       <module name="ATP-Project" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\Dell\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml,javafx.media " />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\noa15\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml,javafx.media " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="View.*" />
@@ -133,7 +318,9 @@
       <workItem from="1623336316170" duration="2297000" />
       <workItem from="1623346338357" duration="122000" />
       <workItem from="1623349051750" duration="3892000" />
-      <workItem from="1623403836189" duration="5964000" />
+      <workItem from="1623505724069" duration="102000" />
+      <workItem from="1623505843461" duration="262000" />
+      <workItem from="1623506938235" duration="13133000" />
     </task>
     <task id="LOCAL-00001" summary="add animated character in MazeDisplayer">
       <created>1622985103379</created>
@@ -255,21 +442,7 @@
       <option name="presentableId" value="LOCAL‎00018" />
       <updated>1623346381872</updated>
     </task>
-    <task id="LOCAL-00019" summary="updated CSS files">
-      <created>1623409423601</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1623409423601</updated>
-    </task>
-    <task id="LOCAL-00020" summary="updated CSS files">
-      <created>1623409474536</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1623409474536</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,8 +467,7 @@
     <MESSAGE value="updated helpWidow, AView, mazeWindowController" />
     <MESSAGE value="added log4j2" />
     <MESSAGE value="added music" />
-    <MESSAGE value="updated CSS files" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated CSS files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added music" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

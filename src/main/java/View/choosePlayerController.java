@@ -14,56 +14,66 @@ public class choosePlayerController extends AView{
     public void update(Observable o, Object arg) {
 
     }
-    public void changePlayer(String player)
-    {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../resources/MazeWindow.fxml"));
-        try {
-            Parent root = fxmlLoader.load();
-            mazeWindowController newView = fxmlLoader.getController();
-            newView.choosePlayer(player);
-            chosenPlayer = player;
-        }
-        catch (Exception e)
-        {}
-    }
 
+    /**
+     * @return the chosen player
+     */
     public static String getChosenPlayer() {
         return chosenPlayer;
     }
 
+    /**
+     * choose the women as the player
+     * @param actionEvent the event that occurs when you press the women button
+     */
     public void women(ActionEvent actionEvent) {
         chosenPlayer = "women";
         switchScene("chooseHardness.fxml",getStage());
-      // changePlayer("women");
     }
 
+    /**
+     * choose the monkey as the player
+     * @param actionEvent the event that occurs when you press the monkey button
+     */
     public void monkey(ActionEvent actionEvent) {
         chosenPlayer = "monkey";
         switchScene("chooseHardness.fxml",getStage());
-        //changePlayer("monkey");
     }
 
+    /**
+     * choose the fox as the player
+     * @param actionEvent the event that occurs when you press the fox button
+     */
     public void fox(ActionEvent actionEvent) {
         chosenPlayer = "fox";
         switchScene("chooseHardness.fxml",getStage());
-        //changePlayer("fox");
     }
 
+    /**
+     * choose the gazelle as the player
+     * @param actionEvent the event that occurs when you press the gazelle button
+     */
     public void gazelle(ActionEvent actionEvent) {
         chosenPlayer = "gazelle";
         switchScene("chooseHardness.fxml",getStage());
-        //changePlayer("gazelle");
+
     }
 
+    /**
+     * choose the child as the player
+     * @param actionEvent the event that occurs when you press the child button
+     */
     public void child(ActionEvent actionEvent) {
         chosenPlayer = "child";
         switchScene("chooseHardness.fxml",getStage());
-        //changePlayer("child");
     }
 
+    /**
+     * choose the man as the player
+     * @param actionEvent the event that occurs when you press the man button
+     */
     public void man(ActionEvent actionEvent) {
         chosenPlayer = "man";
         switchScene("chooseHardness.fxml",getStage());
-       // changePlayer("man");
     }
 }

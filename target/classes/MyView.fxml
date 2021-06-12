@@ -12,55 +12,56 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <GridPane fx:id="startPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
-   <stylesheets>
-      <URL value="@MainStyle.css" />
-   </stylesheets>
-   <columnConstraints>
-      <ColumnConstraints hgrow="ALWAYS" maxWidth="543.3333129882812" minWidth="0.0" prefWidth="25.333331425984696" />
-    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="118.3333257039388" />
-    <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="160.33334096272787" />
-      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="329.33331298828125" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints maxHeight="145.66665903727215" minHeight="0.0" prefHeight="20.999999284744263" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="326.33333404858905" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.000020345052064" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.666646321614564" vgrow="ALWAYS" />
-  </rowConstraints>
-   <children>
-       <MenuBar fx:id="menuBar" stylesheets="@menuBarStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
+    <stylesheets>
+        <URL value="@MainStyle.css" />
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="543.3333129882812" minWidth="0.0" prefWidth="25.333331425984696" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="118.3333257039388" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="160.33334096272787" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="329.33331298828125" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="145.66665903727215" minHeight="0.0" prefHeight="20.999999284744263" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="326.33333404858905" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.000020345052064" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.666646321614564" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <MenuBar fx:id="menuBar" stylesheets="@menuBarStyle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="303.0">
 
-           <menus>
-               <Menu fx:id="fileMenu" mnemonicParsing="false" text="File" disable="true">
-               </Menu>
-               <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
-                   <items>
-                       <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" onAction="#properties"/>
-                   </items>
-               </Menu>
-               <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
-                   <items>
-                       <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
-                   </items>
-               </Menu>
-               <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
-                   <items>
-                       <MenuItem mnemonicParsing="false" text="About us" onAction="#about" />
-                   </items></Menu>
-               <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
-                   <items>
-                       <MenuItem mnemonicParsing="false" text="Exit the game" onAction="#exit" />
-                   </items>
-               </Menu>
-           </menus>
-           <GridPane.margin>
-               <Insets bottom="50.0" />
-           </GridPane.margin>
-       </MenuBar>
-      <Button fx:id="startButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#startScene" prefHeight="42.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
-         <graphic>
-            <Label fx:id="startLabel" text="START" textFill="#2f2c2c" />
-         </graphic>
-      </Button>
-   </children>
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File" disable="true">
+                </Menu>
+                <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
+                    <items>
+                        <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" onAction="#properties"/>
+                        <MenuItem fx:id="musicItem" mnemonicParsing="false" text="Play/Pause music" onAction="#handleMusic"/>
+                    </items>
+                </Menu>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="helpItem" mnemonicParsing="false" onAction="#help" text="Instructions" />
+                    </items>
+                </Menu>
+                <Menu fx:id="aboutMenu" mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About us" onAction="#about" />
+                    </items></Menu>
+                <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Exit the game" onAction="#exit" />
+                    </items>
+                </Menu>
+            </menus>
+            <GridPane.margin>
+                <Insets bottom="50.0" />
+            </GridPane.margin>
+        </MenuBar>
+        <Button fx:id="startButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#startScene" prefHeight="42.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <graphic>
+                <Label fx:id="startLabel" text="START" textFill="#2f2c2c" />
+            </graphic>
+        </Button>
+    </children>
 </GridPane>

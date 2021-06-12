@@ -31,11 +31,11 @@
                         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="21.666666666666686" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="21.666666666666686" vgrow="ALWAYS" />
                         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                     </rowConstraints>
                     <Label fx:id="mazeRows" prefHeight="44.0" prefWidth="182.0" text="Maze rows:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
@@ -43,27 +43,27 @@
                     <TextField fx:id="textField_mazeRows" prefHeight="17.0" prefWidth="122.0" text="10" GridPane.columnIndex="1" GridPane.rowIndex="0" />
                     <TextField fx:id="textField_mazeColumns" text="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                     <Button fx:id="generateButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#generateMaze" prefHeight="54.0" prefWidth="207.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
-                  <graphic>
-                     <Label fx:id="generateLabel" text="Generate" />
-                  </graphic></Button>
+                        <graphic>
+                            <Label fx:id="generateLabel" text="Generate" />
+                        </graphic></Button>
                     <Button fx:id="solveButton" cancelButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#solveMaze" prefHeight="25.0" prefWidth="207.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
-                  <graphic>
-                     <Label fx:id="solveLabel" text="Solve" />
-                  </graphic></Button>
+                        <graphic>
+                            <Label fx:id="solveLabel" text="Solve" />
+                        </graphic></Button>
                     <Label fx:id="playerRowLabel" text="Player Row = " GridPane.rowIndex="2" />
                     <Label fx:id="playerColLabel" text="Player Col = " GridPane.rowIndex="3" />
                     <Label fx:id="playerRow" prefHeight="17.0" prefWidth="47.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                     <Label fx:id="playerCol" prefHeight="17.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-               <Slider fx:id="soundBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="80.0" GridPane.rowIndex="8">
-                  <GridPane.margin>
-                     <Insets left="60.0" right="20.0" />
-                  </GridPane.margin></Slider>
-               <ImageView fx:id="soundBarIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8" />
-               <Label fx:id="TimeLabel" text="Time=" GridPane.rowIndex="4" />
-               <Label fx:id="time" prefHeight="17.0" prefWidth="36.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-               <VBox.margin>
-                  <Insets left="20.0" top="70.0" />
-               </VBox.margin>
+                    <Slider fx:id="soundBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="80.0" GridPane.rowIndex="8">
+                        <GridPane.margin>
+                            <Insets left="60.0" right="20.0" />
+                        </GridPane.margin></Slider>
+                    <ImageView fx:id="soundBarIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8" />
+                    <Label fx:id="TimeLabel" text="Time=" GridPane.rowIndex="4" />
+                    <Label fx:id="time" prefHeight="17.0" prefWidth="36.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <VBox.margin>
+                        <Insets left="20.0" top="70.0" />
+                    </VBox.margin>
                 </GridPane>
             </children>
             <padding>
@@ -87,6 +87,7 @@
                         <Menu fx:id="optionsMenu" mnemonicParsing="false" text="Options">
                             <items>
                                 <MenuItem fx:id="propertiesItem" mnemonicParsing="false" text="Properties" onAction="#properties"/>
+                                <MenuItem fx:id="musicItem" mnemonicParsing="false" text="Play/Pause music" onAction="#handleMusic"/>
                             </items>
                         </Menu>
                         <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
@@ -111,21 +112,21 @@
             </children>
         </VBox>
     </top>
-   <center>
-      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="false" prefHeight="430.0" prefWidth="298.0" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER_RIGHT">
-         <content>
-              <Pane fx:id="mazePane" maxHeight="${scrollPane.height}" maxWidth="${scrollPane.width}" prefHeight="${scrollPane.height}" prefWidth="${scrollPane.width}">
-                  <children>
-                      <MazeDisplayer fx:id="mazeDisplayer" height="${mazePane.height}" imageChild="./resources/images/childR1.png" imageFileNamePlayer="resources/images/foxR1.png" imageFileNameWall="./resources/images/bush2.png" imageFox="./resources/images/foxR1.png" imageGazelle="./resources/images/gazelleR1.png" imageGoalPosition="resources/images/solImage.PNG" imageMan="./resources/images/manR1.PNG" imageMonkey="./resources/images/foxR1.png" imageSolutionPath="resources/images/solutionPath.png" imageWoman="./resources/images/womemR1.PNG" onKeyPressed="#keyPressed" onMouseDragged="#mouseDragged" onScroll="#scroll" width="${mazePane.width}" />
-                  </children>
-                  <padding>
-                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                  </padding>
-              </Pane>
-         </content>
-         <BorderPane.margin>
-            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-         </BorderPane.margin>
-      </ScrollPane>
-   </center>
+    <center>
+        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="false" prefHeight="430.0" prefWidth="298.0" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER_RIGHT">
+            <content>
+                <Pane fx:id="mazePane" maxHeight="${scrollPane.height}" maxWidth="${scrollPane.width}" prefHeight="${scrollPane.height}" prefWidth="${scrollPane.width}">
+                    <children>
+                        <MazeDisplayer fx:id="mazeDisplayer" height="${mazePane.height}" imageChild="./resources/images/childR1.png" imageFileNamePlayer="resources/images/foxR1.png" imageFileNameWall="./resources/images/bush2.png" imageFox="./resources/images/foxR1.png" imageGazelle="./resources/images/gazelleR1.png" imageGoalPosition="resources/images/solImage.PNG" imageMan="./resources/images/manR1.PNG" imageMonkey="./resources/images/monkey1.PNG" imageSolutionPath="resources/images/solutionPath.png" imageWoman="./resources/images/womenR1.PNG" onKeyPressed="#keyPressed" onMouseDragged="#mouseDragged" onScroll="#scroll" width="${mazePane.width}" />
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </Pane>
+            </content>
+            <BorderPane.margin>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
 </BorderPane>

@@ -28,7 +28,6 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("MyView.fxml"));
         Parent root = (Parent)fxmlLoader.load();
-       // Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("sample.fxml"));
         primaryStage.setTitle("Jungle Adventure");
         primaryStage.setScene(new Scene(root, 1000.0D, 650.0D));
         primaryStage.show();
@@ -39,7 +38,6 @@ public class Main extends Application {
         myViewController.setPrimaryStage(primaryStage);
         myViewController.chooseMusic("open");
         SetStageCloseEvent(primaryStage, model);
-
     }
 
     public void SetStageCloseEvent(Stage stage, IModel model){
@@ -47,7 +45,6 @@ public class Main extends Application {
             @Override
             public void handle(WindowEvent event) {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to exit?");
-
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.get() == ButtonType.OK) {
                     model.stopServers();
@@ -60,7 +57,6 @@ public class Main extends Application {
             }
         });
     }
-
     public static void main(String[] args) {
         launch(args);
     }

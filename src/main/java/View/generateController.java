@@ -12,6 +12,10 @@ public class generateController extends AView {
     public TextField rowText;
     public TextField colText;
 
+    /**
+     * generates a maze in the size you enter, show alert if the size is not an integer between 2 to 1000
+     * @param actionEvent the event that occurs when you press the generate button
+     */
     public void customSizeMazeGenerator(ActionEvent actionEvent) {
         String rows = rowText.getText();
         String cols = colText.getText();
@@ -27,8 +31,6 @@ public class generateController extends AView {
         }
 
     }
-
-
     @Override
     public void update(Observable o, Object arg) {
 

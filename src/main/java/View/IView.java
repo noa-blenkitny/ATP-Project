@@ -9,4 +9,5 @@ public interface IView {
     void help();
     void about();
     void properties();
+    void chooseMusic(String Scene);
 }

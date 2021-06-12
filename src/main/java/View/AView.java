@@ -55,6 +55,7 @@ public abstract class AView implements IView, Observer {
             Parent root = fxmlLoader.load();
             AView newView = fxmlLoader.getController();
             newView.setViewModel(this.myViewModel);
+
             Scene newScene = new Scene(root,1000,650);
             primaryStage.setScene(newScene);
             primaryStage.show();
@@ -139,11 +140,14 @@ public abstract class AView implements IView, Observer {
         getStage().fireEvent(
                 new WindowEvent(getStage(), WindowEvent.WINDOW_CLOSE_REQUEST));
     }
+
+
     public void chooseMusic(String scene)
     {
+        MediaPlayer.Status status = MediaPlayer.Status.PLAYING;
         if (mp != null)
         {
-          //  mp.pause();
+            status = mp.getStatus();
             mp.stop();
 
         }
@@ -153,10 +157,33 @@ public abstract class AView implements IView, Observer {
             case "goal" -> "resources/media/Applause Crowd Cheering sound effect.mp3";
             default -> "";
         };
+
         me=new Media(new File(path).toURI().toString());
         mp = new MediaPlayer(me);
-        mp.setAutoPlay(true);
+       // mp.play();
+        switch (status)
+        {
+            case PLAYING -> mp.play();
+            case PAUSED -> mp.pause();
+            case STOPPED -> mp.stop();
+        }
         mp.setOnEndOfMedia(() -> mp.seek(Duration.ZERO));
-    }
 
+    }
+    public void handleMusic()
+    {
+        if (mp != null)
+        {
+
+            if (mp.getStatus() == MediaPlayer.Status.PLAYING)
+            {
+                mp.pause();
+
+            }
+            else
+            {
+                mp.play();
+            }
+        }
+    }
 }
