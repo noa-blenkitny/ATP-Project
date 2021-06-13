@@ -142,9 +142,9 @@ public abstract class AView implements IView, Observer {
 
         }
         String path = switch (scene) {
-            case "open" -> "resources/media/In the Jungle, the mighty jungle....mp3";
-            case "maze" -> "resources/media/jungleDrums.mpeg";
-            case "goal" -> "resources/media/Applause Crowd Cheering sound effect.mp3";
+            case "open" -> "resources/media/In-the-Jungle-the-mighty-jungle.mp3";
+            case "maze" -> "resources/media/jungleDrums.mp3";
+            case "goal" -> "resources/media/Applause-Crowd-Cheering-sound-ef.mp3";
             default -> "";
         };
 
