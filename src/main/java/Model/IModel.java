@@ -26,7 +26,7 @@ public interface IModel
     void solveMaze();
 
     /**
-     * @return the soultion of the IModel's maze
+     * @return the solution of the IModel's maze
      */
     Solution getSolution();
 

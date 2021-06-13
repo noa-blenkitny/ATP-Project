@@ -44,6 +44,10 @@ public class propertiesController extends AView implements Initializable
         searchingAlgorithm.getSelectionModel().selectedItemProperty().addListener((v,oldValue, newValue)->searchingAlgorithm.setValue(newValue));
 
     }
+
+    /**
+     * on update button click will update the configuration properties
+     */
     public void updateClicked(){
 
 
@@ -64,6 +68,10 @@ public class propertiesController extends AView implements Initializable
         }
     }
 
+    /**
+     * @param num the param we want to validate
+     * @return true if correct, false if not
+     */
     public boolean checkParam(String num)
     {
             try

@@ -24,30 +24,11 @@ public abstract class AView implements IView, Observer {
     protected static MediaPlayer mp;
     protected static Media me;
 
-    public static Stage getPreviousStage() {
-        return previousStage;
-    }
 
-    public static void setPreviousStage(Stage previousStage) {
-        AView.previousStage = previousStage;
-    }
-
-    public static Stage previousStage;
-    protected MyViewModel myViewModel;
-
-    public static void setStage(Stage stage) {
-        AView.stage = stage;
-    }
-
-    public static Stage getStage() {
-        return stage;
-    }
-
-    public void setPrimaryStage(Stage primaryStage)
-    {
-        AView.stage = primaryStage;
-    }
-
+    /**
+     * @param fxmlName the new scene FXML name
+     * @param primaryStage The stage where we will replace the scene
+     */
     @Override
     public void switchScene(String fxmlName, Stage primaryStage) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(fxmlName));
@@ -64,12 +45,10 @@ public abstract class AView implements IView, Observer {
         }
     }
 
-    public void setViewModel(MyViewModel myViewModel)
-    {
-        this.myViewModel= myViewModel;
-        this.myViewModel.addObserver(this);
-    }
 
+    /**
+     * menu help button click
+     */
     @Override
     public void help()
     {
@@ -84,7 +63,9 @@ public abstract class AView implements IView, Observer {
             newStage.show();
         }catch (Exception e){ }
     }
-
+    /**
+     * menu about button click
+     */
     @Override
     public void about()
     {
@@ -99,7 +80,9 @@ public abstract class AView implements IView, Observer {
             newStage.show();
         }catch (Exception e){ }
     }
-
+    /**
+     * menu properties button click
+     */
     @Override
     public void properties()
     {
@@ -131,6 +114,10 @@ public abstract class AView implements IView, Observer {
             e.printStackTrace();
         }
     }
+
+    /**
+     * @param Message to indicate what is wrong with the input parameter
+     */
     public void invalidParamAlert(String Message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setContentText(Message);
@@ -142,6 +129,9 @@ public abstract class AView implements IView, Observer {
     }
 
 
+    /**
+     * @param scene music according to the specific scene selected
+     */
     public void chooseMusic(String scene)
     {
         MediaPlayer.Status status = MediaPlayer.Status.PLAYING;
@@ -185,5 +175,37 @@ public abstract class AView implements IView, Observer {
                 mp.play();
             }
         }
+    }
+    /**
+     * getters and setters
+     */
+    public static Stage getPreviousStage() {
+        return previousStage;
+    }
+
+    public static void setPreviousStage(Stage previousStage) {
+        AView.previousStage = previousStage;
+    }
+
+    public static Stage previousStage;
+    protected MyViewModel myViewModel;
+
+    public static void setStage(Stage stage) {
+        AView.stage = stage;
+    }
+
+    public static Stage getStage() {
+        return stage;
+    }
+
+    public void setPrimaryStage(Stage primaryStage)
+    {
+        AView.stage = primaryStage;
+    }
+
+    public void setViewModel(MyViewModel myViewModel)
+    {
+        this.myViewModel= myViewModel;
+        this.myViewModel.addObserver(this);
     }
 }

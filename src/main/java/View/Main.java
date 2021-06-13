@@ -40,6 +40,10 @@ public class Main extends Application {
         SetStageCloseEvent(primaryStage, model);
     }
 
+    /**
+     * @param stage the stage to close in the close event
+     * @param model the model in which the servers are
+     */
     public void SetStageCloseEvent(Stage stage, IModel model){
         stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override

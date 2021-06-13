@@ -45,21 +45,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
     StringProperty updatePlayerRow = new SimpleStringProperty();
     StringProperty updatePlayerCol = new SimpleStringProperty();
 
-    public String getUpdatePlayerRow() {
-        return updatePlayerRow.get();
-    }
 
-    public void setUpdatePlayerRow(int updatePlayerRow) {
-        this.updatePlayerRow.set(updatePlayerRow + "");
-    }
-
-    public String getUpdatePlayerCol() {
-        return updatePlayerCol.get();
-    }
-
-    public void setUpdatePlayerCol(int updatePlayerCol) {
-        this.updatePlayerCol.set(updatePlayerCol + "");
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -78,30 +64,50 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
     }
 
+    /**
+     * @param actionEvent the event - click Generate button
+     */
     public void generateMaze(ActionEvent actionEvent) {
         String rows = textField_mazeRows.getText();
         String cols = textField_mazeColumns.getText();
         myViewModel.generateMaze(rows, cols);
     }
 
+    /**
+     * @param actionEvent the event - click Solve button
+     */
     public void solveMaze(ActionEvent actionEvent) {
         myViewModel.solveMaze();
     }
 
+    /**
+     * @param keyEvent - the event - key pressed to move the player
+     */
     public void keyPressed(KeyEvent keyEvent) {
         myViewModel.movePlayer(keyEvent.getCode());
         keyEvent.consume();
     }
 
+    /**
+     * @param row new row after moving in the maze
+     * @param col new column after moving in the maze
+     */
     public void setPlayerPosition(int row, int col){
         mazeDisplayer.setPlayerPosition(row, col);
         setUpdatePlayerRow(row);
         setUpdatePlayerCol(col);
     }
 
+    /**
+     * @param mouseEvent when the mouse clicked on the maze displayer the focus will be on iy
+     */
     public void mouseClicked(MouseEvent mouseEvent) {
         mazeDisplayer.requestFocus();
     }
+
+    /**
+     * @param mouseEvent moving the player in the maze according to mouse dragging
+     */
     public void mouseDragged(MouseEvent mouseEvent){
             int maxSize = Math.max(myViewModel.getMaze()[0].length, myViewModel.getMaze().length);
             double cellHeight = mazeDisplayer.getHeight() / myViewModel.getMaze().length;
@@ -143,6 +149,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
             mouseEvent.consume();
         }
 
+    /**
+     * @param scroll to manage zoom in and zoom out event
+     */
     public void scroll(ScrollEvent scroll) {
 
         double zoom_fac =0.1 ;
@@ -162,6 +171,10 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
     }
 
+    /**
+     * @param o the observable class to update
+     * @param arg the update notification when operation is complete
+     */
     @Override
     public void update(Observable o, Object arg) {
         String change = (String) arg;
@@ -176,11 +189,17 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
     }
 
+    /**
+     * the function that passes the solution to the maze displayer
+     */
     private void mazeSolved()
     {
         mazeDisplayer.setSolution(myViewModel.getSolution());
     }
 
+    /**
+     * the function that passes when reached the goal to the maze displayer
+     */
     private void reachedGoal()
     {
         try{
@@ -201,10 +220,17 @@ public class mazeWindowController extends AView implements Initializable, Observ
             newStage.showAndWait();
         }catch (Exception e){ }
     }
+
+    /**
+     * the function that passes that player moved and the now position to the maze displayer
+     */
     private void playerMoved() {
         setPlayerPosition(myViewModel.getPlayerRow(), myViewModel.getPlayerCol());
     }
 
+    /**
+     * the function that passes that the new maze is generated to the maze displayer
+     */
     protected void mazeGenerated() {
         mazeDisplayer.setSolution(null);
         mazeDisplayer.drawMaze(myViewModel.getMaze(),   myViewModel.getGoalPosition());
@@ -215,6 +241,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         mazeDisplayer.changePlayer(player);
     }
 
+    /**
+     * @param event on save button click
+     */
     public void save(ActionEvent event)
     {
         FileChooser fileChooser = new FileChooser();
@@ -229,6 +258,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
     }
 
+    /**
+     * @param event on load button click
+     */
     public void load(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("./resources"));
@@ -242,6 +274,9 @@ public class mazeWindowController extends AView implements Initializable, Observ
         }
     }
 
+    /**
+     * @param event on new button click
+     */
     public void New(ActionEvent event)
     {
         try{
@@ -249,6 +284,24 @@ public class mazeWindowController extends AView implements Initializable, Observ
 
         }catch (Exception e){ }
 
+    }
+    /**
+     * getters and setters
+     */
+    public String getUpdatePlayerRow() {
+        return updatePlayerRow.get();
+    }
+
+    public void setUpdatePlayerRow(int updatePlayerRow) {
+        this.updatePlayerRow.set(updatePlayerRow + "");
+    }
+
+    public String getUpdatePlayerCol() {
+        return updatePlayerCol.get();
+    }
+
+    public void setUpdatePlayerCol(int updatePlayerCol) {
+        this.updatePlayerCol.set(updatePlayerCol + "");
     }
 }
 

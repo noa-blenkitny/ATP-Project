@@ -45,6 +45,9 @@ public class MazeDisplayer extends Canvas {
     private StringProperty imageGoalPosition = new SimpleStringProperty();
     private Image playerImage ;
 
+    /**
+     * @param imageMan the path to the Man player image
+     */
     public void setImageMan(String imageMan) {
         this.imageMan.set(imageMan);
     }
@@ -55,25 +58,42 @@ public class MazeDisplayer extends Canvas {
         widthProperty().addListener(e -> draw());
         heightProperty().addListener(e -> draw());
     }
+
+    /**
+     * @return the current player row
+     */
     public int getPlayerRow() {
         return playerRow;
     }
 
+    /**
+     * @return the current player column
+     */
     public int getPlayerCol() {
         return playerCol;
     }
 
+    /**
+     * @param row the row in the new position of the player
+     * @param col the column in the new position of the player
+     */
     public void setPlayerPosition(int row, int col) {
         this.playerRow = row;
         this.playerCol = col;
         draw();
     }
 
+    /**
+     * @param solution the solution of the current maze to draw on the maze displayer
+     */
     public void setSolution(Solution solution) {
         this.solution = solution;
         draw();
     }
 
+    /**
+     * @return the path to the wall image of the maze
+     */
     public String getImageFileNameWall() {
         return imageFileNameWall.get();
     }
@@ -86,6 +106,9 @@ public class MazeDisplayer extends Canvas {
         this.imageFileNameWall.set(imageFileNameWall);
     }
 
+    /**
+     * @return the path to the default player image of the game
+     */
     public String getImageFileNamePlayer() {
         return imageFileNamePlayer.get();
     }
@@ -98,6 +121,10 @@ public class MazeDisplayer extends Canvas {
         this.imageFileNamePlayer.set(imageFileNamePlayer);
     }
 
+    /**
+     * @param maze the maze to draw
+     * @param goal the goal position of the given maze
+     */
     public void drawMaze(int[][] maze, Position goal) {
         this.maze = maze;
         this.goalRow = goal.getRowIndex();
@@ -105,6 +132,9 @@ public class MazeDisplayer extends Canvas {
         draw();
     }
 
+    /**
+     * draw the maze displayer - the walls, player in the current position after a move, the solution.
+     */
     public void draw() {
         if(maze != null){
             double canvasHeight = getHeight();
@@ -128,6 +158,11 @@ public class MazeDisplayer extends Canvas {
         }
     }
 
+    /**
+     * @param graphicsContext
+     * @param cellHeight the cell height will be calculated according to the maze size and the pane size
+     * @param cellWidth the cell width will be calculated according to the maze size and the pane size
+     */
     public void drawGoal(GraphicsContext graphicsContext, double cellHeight, double cellWidth)
     {
         Image goalImage = null;
@@ -153,7 +188,11 @@ public class MazeDisplayer extends Canvas {
         }
 
 
-
+    /**
+     * @param graphicsContext
+     * @param cellHeight the cell height will be calculated according to the maze size and the pane size
+     * @param cellWidth the cell width will be calculated according to the maze size and the pane size
+     */
     public void drawSolution(GraphicsContext graphicsContext, double cellHeight, double cellWidth)
     {
         //imageSolutionPath.set("./resources/images/solutionPath.png");
@@ -186,6 +225,13 @@ public class MazeDisplayer extends Canvas {
 
     }
 
+    /**
+     * @param graphicsContext
+     *@param cellHeight the cell height will be calculated according to the maze size and the pane size
+     * @param cellWidth the cell width will be calculated according to the maze size and the pane size
+     * @param rows number of rows in the current maze
+     * @param cols number of columns in the current maze
+     */
     public void drawMazeWalls(GraphicsContext graphicsContext, double cellHeight, double cellWidth, int rows, int cols) {
         graphicsContext.setFill(Color.RED);
 
@@ -211,6 +257,11 @@ public class MazeDisplayer extends Canvas {
         }
     }
 
+    /**
+     * @param graphicsContext
+     * @param cellHeight the cell height will be calculated according to the maze size and the pane size
+     * @param cellWidth the cell width will be calculated according to the maze size and the pane size
+     */
     private void drawPlayer(GraphicsContext graphicsContext, double cellHeight, double cellWidth) {
         double x = getPlayerCol() * cellWidth;
         double y = getPlayerRow() * cellHeight;
@@ -227,6 +278,9 @@ public class MazeDisplayer extends Canvas {
             graphicsContext.drawImage(playerImage, x, y, cellWidth, cellHeight);
     }
 
+    /**
+     * @param player the player that the user choose
+     */
     public void changePlayer(String player)
     {
         switch(player)
@@ -252,7 +306,9 @@ public class MazeDisplayer extends Canvas {
 
         }
     }
-
+    /**
+     * getters and setters
+     */
     public String getImageFox() {
         return imageFox.get();
     }
