@@ -247,7 +247,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
     public void save(ActionEvent event)
     {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(("./resources")));
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Maze Files (*.maze)", "*.maze")
         );
@@ -263,7 +263,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
      */
     public void load(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File("./resources"));
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Maze Files (*.maze)", "*.maze")
         );

@@ -36,9 +36,9 @@ public class propertiesController extends AView implements Initializable
     {
         config = Configurations.getInstance();
         generatingAlgorithm.getItems().addAll("Empty" , "Simple" , "My");
-        searchingAlgorithm.getItems().addAll("Best" , "BFS" , "DFS");
+        searchingAlgorithm.getItems().addAll("BestFirstSearch" , "BreadthFirstSearch" , "DepthFirstSearch");
         generatingAlgorithm.setValue(config.getMazeGeneratingAlgorithm().getName());
-        searchingAlgorithm.setValue("BFS");
+        searchingAlgorithm.setValue(config.getMazeSearchingAlgorithm().getName());
         threadSize.setText(String.valueOf(config.getThreadPoolSize()));
         generatingAlgorithm.getSelectionModel().selectedItemProperty().addListener((v,oldValue, newValue)->generatingAlgorithm.setValue(newValue));
         searchingAlgorithm.getSelectionModel().selectedItemProperty().addListener((v,oldValue, newValue)->searchingAlgorithm.setValue(newValue));

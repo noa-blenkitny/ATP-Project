@@ -1,0 +1,89 @@
+2021.06.15 17:23:13.181 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:23:13.213 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 17:42:13.205 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:42:13.246 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 17:47:30.088 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:47:30.131 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 17:50:21.676 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:50:21.727 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 17:53:10.172 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:53:10.235 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 17:54:28.055 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 17:54:28.109 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 18:01:54.283 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 18:01:54.352 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 18:02:10.874 INFO  Model.MyModel - started servers
+2021.06.15 18:02:10.953 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [26] [28]
+2021.06.15 18:02:16.961 INFO  Model.MyModel - stopped servers
+2021.06.15 18:08:09.644 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 18:08:09.719 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 18:13:07.414 INFO  Model.MyModel - started servers
+2021.06.15 18:13:07.456 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [14] [26]
+2021.06.15 18:13:41.107 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 18:13:41.834 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 18:13:41.974 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 10
+2021.06.15 18:13:43.241 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 18:13:43.288 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 10
+2021.06.15 18:13:44.408 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 18:13:44.461 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 10
+2021.06.15 18:24:35.717 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 18:24:35.724 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 18:24:59.763 INFO  Model.MyModel - started servers
+2021.06.15 18:24:59.812 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [47] [48]
+2021.06.15 18:25:02.514 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 18:25:07.802 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:00:15.786 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 19:00:15.789 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 19:39:44.261 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 19:39:44.266 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 19:39:50.529 INFO  Model.MyModel - started servers
+2021.06.15 19:39:50.572 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [24] [27]
+2021.06.15 19:39:57.920 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:39:59.184 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 19:39:59.334 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 17
+2021.06.15 19:40:22.083 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:40:35.673 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:40:44.490 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:40:59.171 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:41:00.450 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 19:41:00.503 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 15
+2021.06.15 19:41:31.521 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:41:32.444 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 19:41:32.482 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 12
+2021.06.15 19:41:52.879 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:42:02.485 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:42:14.448 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 19:42:28.906 INFO  Model.MyModel - stopped servers
+2021.06.15 20:04:43.077 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 20:04:43.082 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 20:12:49.374 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 20:12:49.380 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 20:13:13.066 INFO  Model.MyModel - started servers
+2021.06.15 20:13:13.122 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [12] [12]
+2021.06.15 20:13:16.374 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 20:13:16.533 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 19
+2021.06.15 20:13:28.796 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 20:13:29.675 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1 requested to solve a maze
+2021.06.15 20:13:29.735 INFO  Model.MyModel - Server succeeded to solve the maze of user LAPTOP-4TL8RG18/192.168.56.1the length of the solution is 16
+2021.06.15 20:13:50.492 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 20:14:01.368 INFO  Model.MyModel - started servers
+2021.06.15 20:14:01.381 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [12] [12]
+2021.06.15 20:15:05.199 INFO  Model.MyModel - stopped servers
+2021.06.15 20:17:40.847 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 20:17:40.853 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 20:18:05.081 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 20:18:05.088 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 20:18:17.616 INFO  Model.MyModel - started servers
+2021.06.15 20:18:17.676 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [16] [16]
+2021.06.15 20:18:30.574 INFO  Model.MyModel - saved a maze to the disk
+2021.06.15 20:18:33.186 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 20:18:40.714 INFO  Model.MyModel - loaded a maze from the disk
+2021.06.15 20:18:56.917 INFO  Model.MyModel - saved a maze to the disk
+2021.06.15 20:18:58.004 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [10] [10]
+2021.06.15 20:19:05.133 INFO  Model.MyModel - loaded a maze from the disk
+2021.06.15 20:19:15.583 INFO  Model.MyModel - stopped servers
+2021.06.15 20:23:16.065 INFO  Model.MyModel - Generate maze server initialized at port 5400
+2021.06.15 20:23:16.070 INFO  Model.MyModel - Solve maze server initialized at port 5401
+2021.06.15 20:24:19.379 INFO  Model.MyModel - started servers
+2021.06.15 20:24:19.430 INFO  Model.MyModel - User LAPTOP-4TL8RG18/192.168.56.1requested to generate a maze of size [12] [15]
+2021.06.15 20:24:28.053 INFO  Model.MyModel - stopped servers

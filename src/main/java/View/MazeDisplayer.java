@@ -23,6 +23,7 @@ import javafx.util.Duration;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -165,10 +166,12 @@ public class MazeDisplayer extends Canvas {
      */
     public void drawGoal(GraphicsContext graphicsContext, double cellHeight, double cellWidth)
     {
+        graphicsContext.setFill(Color.YELLOW);
         Image goalImage = null;
         try {
-            goalImage = new Image(new FileInputStream(getImageGoalPosition()));
-        } catch (FileNotFoundException e) {
+            goalImage = new Image(getImageResourceAsStream(getImageGoalPosition()));
+            //goalImage = new Image(new FileInputStream(getImageGoalPosition()));
+        } catch (Exception e) {
             e.printStackTrace();
         }
             try {
@@ -195,11 +198,12 @@ public class MazeDisplayer extends Canvas {
      */
     public void drawSolution(GraphicsContext graphicsContext, double cellHeight, double cellWidth)
     {
+        graphicsContext.setFill(Color.BLACK);
         //imageSolutionPath.set("./resources/images/solutionPath.png");
         Image solImage = null;
         try {
-            solImage = new Image(new FileInputStream(getImageSolutionPath()));
-        } catch (FileNotFoundException e) {
+            solImage = new Image(getImageResourceAsStream(getImageSolutionPath()));
+        } catch (Exception e) {
             e.printStackTrace();
         }
         ArrayList<AState> solotionPath = solution.getSolutionPath();
@@ -237,8 +241,8 @@ public class MazeDisplayer extends Canvas {
 
         Image wallImage = null;
         try{
-            wallImage = new Image(new FileInputStream(getImageFileNameWall()));
-        } catch (FileNotFoundException e) {
+            wallImage = new Image(getImageResourceAsStream(getImageFileNameWall()));
+        } catch (Exception e) {
             System.out.println("There is no wall image file");
         }
 
@@ -268,8 +272,8 @@ public class MazeDisplayer extends Canvas {
         graphicsContext.setFill(Color.GREEN);
         try {
 
-            playerImage = new Image(new FileInputStream(getImageFileNamePlayer()));
-        } catch (FileNotFoundException e) {
+            playerImage = new Image(getImageResourceAsStream(getImageFileNamePlayer()));
+        } catch (Exception e) {
             System.out.println("There is no player image file");
         }
         if(playerImage == null)
@@ -304,8 +308,14 @@ public class MazeDisplayer extends Canvas {
                 imageFileNamePlayer.set(imageWoman.get());
                 break;
 
+
         }
     }
+    private InputStream getImageResourceAsStream(String imagePath)
+    {
+        return getClass().getClassLoader().getResourceAsStream(imagePath);
+    }
+
     /**
      * getters and setters
      */

@@ -31,8 +31,9 @@ public abstract class AView implements IView, Observer {
      */
     @Override
     public void switchScene(String fxmlName, Stage primaryStage) {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(fxmlName));
+
         try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(fxmlName));
             Parent root = fxmlLoader.load();
             AView newView = fxmlLoader.getController();
             newView.setViewModel(this.myViewModel);
@@ -142,13 +143,15 @@ public abstract class AView implements IView, Observer {
 
         }
         String path = switch (scene) {
-            case "open" -> "resources/media/In-the-Jungle-the-mighty-jungle.mp3";
-            case "maze" -> "resources/media/jungleDrums.mp3";
-            case "goal" -> "resources/media/Applause-Crowd-Cheering-sound-ef.mp3";
+            case "open" -> "media/In-the-Jungle-the-mighty-jungle.mp3";
+            case "maze" -> "media/jungleDrums.mp3";
+            case "goal" -> "media/Applause-Crowd-Cheering-sound-ef.mp3";
             default -> "";
         };
-
-        me=new Media(new File(path).toURI().toString());
+        String p = getClass().getClassLoader().getResource(path).toExternalForm();
+        me = new Media(p);
+        //me = new Media((getClass().getClassLoader().getResourceAsStream("media/Applause-Crowd-Cheering-sound-ef.mp3")));
+       // me=new Media(new File(path).toURI().toString());
         mp = new MediaPlayer(me);
        // mp.play();
         switch (status)
