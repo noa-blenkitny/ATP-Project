@@ -234,7 +234,7 @@ public class mazeWindowController extends AView implements Initializable, Observ
     protected void mazeGenerated() {
         mazeDisplayer.setSolution(null);
         mazeDisplayer.drawMaze(myViewModel.getMaze(),   myViewModel.getGoalPosition());
-        mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerRow());
+        mazeDisplayer.setPlayerPosition(myViewModel.getPlayerRow(),myViewModel.getPlayerCol());
     }
     public void choosePlayer(String player)
     {
